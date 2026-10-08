@@ -20,7 +20,7 @@ export type BlogPost = {
 
 /**
  * Commercial Tarkov hack guides — unique intents, keyword-targeted meta.
- * Primary SERP targets: tarkov hacks, dayz cheat, dayz hacks, aimbot, esp, wallhack, radar.
+ * Primary SERP targets: tarkov hacks, eft cheats, escape from tarkov hacks, aimbot, esp, wallhack, radar.
  */
 export const BLOGS: BlogPost[] = [
   {
@@ -28,10 +28,11 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov Cheat Features Checklist',
     excerpt:
       'Checklist of every Tarkov hack module on hacksfortarkov.org — silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
-    metaTitle: 'Tarkov Cheat Features Checklist | Aimbot ESP Radar',
+    metaTitle: 'Tarkov Cheat Features | EFT Hacks Aimbot ESP Wallhack Radar',
     metaDescription:
-      'Tarkov hack features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on hacksfortarkov.org from $35. Compare modules before you buy.',
-    searchTerms: 'dayz cheat features checklist tarkov hacks aimbot esp wallhack radar hack',
+      'Tarkov hack and EFT cheats features checklist: silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and BattlEye status on hacksfortarkov.org from $35 before checkout.',
+    searchTerms:
+      'tarkov hacks tarkov cheats eft hacks escape from tarkov cheats aimbot esp wallhack radar hack loot esp',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Features',
@@ -79,10 +80,11 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov Aimbot Settings for Silent Aim',
     excerpt:
       'Tune Tarkov Aimbot FOV, smoothing, hitbox and silent aim so survivor tracking stays effective without looking robotic to spectating admins.',
-    metaTitle: 'Tarkov Aimbot Settings | Silent Aim FOV & Smoothing',
+    metaTitle: 'Tarkov Aimbot Settings | EFT Silent Aim & Cheat FOV',
     metaDescription:
-      'Tarkov Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your Tarkov hack looks legit on official and private servers. Start conservative, then save configs.',
-    searchTerms: 'dayz aimbot settings silent aim fov smoothing dayz cheat tarkov hacks',
+      'Tarkov aimbot settings for EFT cheats on PC: silent aim, FOV, smoothing and visible-check so Escape from Tarkov hacks look legit. Tarkov cheat aimbot configs on hacksfortarkov.org.',
+    searchTerms:
+      'tarkov aimbot silent aim tarkov cheat aimbot eft cheats tarkov hacks fov smoothing',
     date: '2026-09-17',
     readMinutes: 10,
     tag: 'Aimbot',
@@ -125,10 +127,11 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov ESP and Wallhack Setup',
     excerpt:
       'Configure Tarkov ESP and wallhack for survivor boxes, infected tracking and loot highlighting without flooding your HUD.',
-    metaTitle: 'Tarkov ESP Wallhack Setup | Player Loot & Infected',
+    metaTitle: 'Tarkov ESP Wallhack | EFT Player Loot ESP & Hacks',
     metaDescription:
-      'Tarkov ESP and wallhack setup: survivor boxes, skeletons, distance, health, infected ESP and loot highlighting. Clean HUD defaults for Tarkov hacks on PC.',
-    searchTerms: 'dayz esp wallhack tarkov hacks loot esp player boxes infected dayz cheat',
+      'Tarkov ESP and wallhack setup for EFT hacks: player boxes, loot ESP, distance, health and scav tracking. Escape from Tarkov cheats HUD defaults on hacksfortarkov.org.',
+    searchTerms:
+      'tarkov esp tarkov wallhack loot esp player esp eft hacks escape from tarkov cheats',
     date: '2026-09-17',
     readMinutes: 9,
     tag: 'ESP',
@@ -169,10 +172,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov Radar Hack Overlay Guide',
     excerpt:
       'Use the Tarkov radar hack 2D overlay to track off-screen survivors, avoid third parties and approach military loot safer.',
-    metaTitle: 'Tarkov Radar Hack Guide | 2D Overlay for Survivors',
+    metaTitle: 'Tarkov Radar Hack | EFT Cheats 2D Overlay Guide',
     metaDescription:
-      'Tarkov radar hack guide for PC: 2D radar overlay, off-screen survivor tracking and safer military loot approaches. Pair with ESP for Tarkov hacks that stay readable.',
-    searchTerms: 'dayz radar hack tarkov hacks 2d radar overlay off screen dayz cheat',
+      'Tarkov radar hack guide for EFT cheats on PC: 2D overlay, off-screen PMC tracking and safer extracts. Pair radar hack with ESP and wallhack on hacksfortarkov.org.',
+    searchTerms: 'tarkov radar hack radar hack eft cheats tarkov hacks 2d radar escape from tarkov hacks',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Radar',
@@ -205,10 +208,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov Hacks Hotkeys After Load',
     excerpt:
       'Menu and toggle hotkeys for Tarkov hacks after a clean load — Aimbot, ESP, loot ESP, radar and panic binds.',
-    metaTitle: 'Tarkov Hacks Hotkeys | Menu ESP Aimbot Toggles',
+    metaTitle: 'Tarkov Hacks Hotkeys | EFT Aimbot ESP Wallhack Menu',
     metaDescription:
-      'Tarkov hacks hotkeys after checkout: open menu, Aimbot toggle, player ESP, loot ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.',
-    searchTerms: 'tarkov hacks hotkeys menu esp aimbot radar toggles dayz cheat',
+      'Tarkov hacks hotkeys for EFT cheats: menu, aimbot toggle, player ESP, loot ESP, wallhack, radar hack and stream-proof binds after checkout on hacksfortarkov.org.',
+    searchTerms: 'tarkov hacks hotkeys eft cheats menu esp aimbot wallhack radar hack tarkov cheat',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Hotkeys',
@@ -241,10 +244,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Complete Tarkov Hacks Setup',
     excerpt:
       'Step-by-step Tarkov hacks setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.',
-    metaTitle: 'Tarkov Hacks Setup Guide | Complete Loader Steps',
+    metaTitle: 'Tarkov Hacks Setup | EFT Cheats Loader & BattlEye',
     metaDescription:
-      'Complete Tarkov hacks setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.',
-    searchTerms: 'tarkov hacks setup load order windows complete guide dayz cheat',
+      'Complete Escape from Tarkov hacks setup: EFT cheats load order, antivirus exclusions, aimbot and ESP first run, spoofer steps and BattlEye re-check on hacksfortarkov.org.',
+    searchTerms: 'tarkov hacks setup eft cheats escape from tarkov hacks load order battleye tarkov hacks',
     date: '2026-09-17',
     readMinutes: 11,
     tag: 'Setup',
@@ -285,10 +288,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov Hacks on Windows 10 and 11',
     excerpt:
       'Windows 10/11 prep for Tarkov hacks — overlays, Defender exclusions, admin rights and a clean first launch against BattlEye.',
-    metaTitle: 'Tarkov Hacks Windows 10/11 Setup | PC Guide',
+    metaTitle: 'Tarkov Hacks Windows Setup | EFT PC Cheat Guide',
     metaDescription:
-      'Windows 10 and 11 setup for Tarkov hacks: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against BattlEye.',
-    searchTerms: 'tarkov hacks windows 11 setup defender overlay admin dayz cheat',
+      'Windows 10/11 setup for Tarkov hacks and EFT cheats: overlays off, Defender exclusions, admin loader rights and clean BattlEye first load on hacksfortarkov.org.',
+    searchTerms: 'tarkov hacks windows setup eft hacks defender exclusion tarkov cheat loader',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Windows',
@@ -320,10 +323,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Antivirus Exclusions for Tarkov Hacks',
     excerpt:
       'Allowlist Tarkov hacks in Windows Defender and common antivirus so the loader is not quarantined before first run.',
-    metaTitle: 'Tarkov Hacks Antivirus Exclusions | Defender',
+    metaTitle: 'Tarkov Hacks Antivirus | EFT Loader Exclusions',
     metaDescription:
-      'Allowlist Tarkov hacks loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.',
-    searchTerms: 'tarkov hacks antivirus defender exclusion quarantine loader dayz cheat',
+      'Antivirus exclusions for Tarkov hacks and Escape from Tarkov cheat loaders — Defender allowlist, quarantine restore and EFT hack delivery folder on hacksfortarkov.org.',
+    searchTerms: 'tarkov hacks antivirus eft cheats defender exclusion loader tarkov cheat battleye',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Antivirus',
@@ -355,10 +358,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Stream-Proof Tarkov Hacks for OBS',
     excerpt:
       'Hide Tarkov ESP, loot highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.',
-    metaTitle: 'Stream-Proof Tarkov Hacks | OBS Safe Overlay',
+    metaTitle: 'Stream-Proof Tarkov Hacks | EFT ESP OBS Guide',
     metaDescription:
-      'Stream-proof Tarkov hacks for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.',
-    searchTerms: 'dayz stream proof cheats esp obs hide overlay clips dayz cheat',
+      'Stream-proof Tarkov hacks for OBS: hide EFT ESP, wallhack and aimbot overlays from clips while keeping local view. Escape from Tarkov cheats stream setup on hacksfortarkov.org.',
+    searchTerms: 'stream proof tarkov hacks eft esp obs wallhack tarkov cheats escape from tarkov hacks',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Stream',
@@ -390,10 +393,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Tarkov BattlEye Status: Clear to Load vs Updating',
     excerpt:
       'What clear-to-load and Updating mean for Tarkov hacks after BattlEye and game patches — and why admin bans are a separate risk.',
-    metaTitle: 'Tarkov BattlEye Status | Clear to Load vs Updating',
+    metaTitle: 'Tarkov BattlEye Status | EFT Hacks Clear vs Updating',
     metaDescription:
-      'Tarkov BattlEye status explained for Tarkov hacks: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.',
-    searchTerms: 'dayz battleye status clear to load updating tarkov hacks explained',
+      'BattlEye status for Tarkov hacks and EFT cheats: clear-to-load vs Updating, undetected windows, and why Escape from Tarkov hack buyers wait on hacksfortarkov.org.',
+    searchTerms: 'battleye tarkov hacks battleye status eft cheats undetected tarkov hacks clear to load',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Status',
@@ -431,10 +434,10 @@ export const BLOGS: BlogPost[] = [
     title: 'BattlEye Status Checklist Before You Buy or Load',
     excerpt:
       'Short BattlEye status checklist for Tarkov hacks — confirm clear-to-load before checkout and before every post-patch session.',
-    metaTitle: 'BattlEye Status Checklist | Before You Buy Tarkov Hacks',
+    metaTitle: 'BattlEye Checklist | Buy EFT Cheats & Tarkov Hacks',
     metaDescription:
-      'BattlEye status checklist for Tarkov hacks: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.',
-    searchTerms: 'tarkov hacks status checklist before buy load battleye undetected tarkov hacks',
+      'BattlEye checklist before you buy Tarkov hacks or EFT cheats: confirm clear-to-load, avoid Updating builds, and re-check Escape from Tarkov hack status every patch.',
+    searchTerms: 'tarkov hacks status checklist eft cheats battleye undetected escape from tarkov cheats buy',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Status',
@@ -464,10 +467,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Safer Tarkov Cheat Settings for Loot Runs',
     excerpt:
       'Safer Tarkov hack defaults for survival and loot runs — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
-    metaTitle: 'Safer Tarkov Cheat Settings | Loot Run Defaults',
+    metaTitle: 'Safer Tarkov Cheat Settings | EFT Loot ESP & Aimbot',
     metaDescription:
-      'Safer Tarkov hack settings for loot runs and survival: ESP-first play, mild silent aim, loot highlighting, radar hack and BattlEye habits that reduce report risk on private servers.',
-    searchTerms: 'dayz cheat settings loot run survival safer defaults esp aimbot tarkov hacks',
+      'Safer Tarkov cheat settings for EFT loot runs: ESP-first, loot ESP, mild silent aim, radar hack and wallhack habits that reduce report risk on Escape from Tarkov raids.',
+    searchTerms: 'tarkov cheat settings loot esp eft hacks tarkov aimbot safer tarkov hacks survival',
     date: '2026-09-17',
     readMinutes: 9,
     tag: 'Survival',
@@ -500,10 +503,10 @@ export const BLOGS: BlogPost[] = [
     title: 'Fix Tarkov Hacks Loader Errors',
     excerpt:
       'Troubleshoot Tarkov hacks loader errors — menu not opening, instant close, antivirus quarantine and failed inject.',
-    metaTitle: 'Fix Tarkov Hacks Loader Errors | Inject & Menu',
+    metaTitle: 'Fix Tarkov Hacks Loader | EFT Cheat Inject Errors',
     metaDescription:
-      'Fix Tarkov hacks loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.',
-    searchTerms: 'tarkov hacks loader error inject failed menu not opening fix',
+      'Fix Tarkov hacks loader errors for EFT cheats on Windows: inject failed, menu not opening, antivirus quarantine and overlay conflicts — check BattlEye status on hacksfortarkov.org first.',
+    searchTerms: 'tarkov hacks loader error eft cheats inject failed tarkov cheat menu battleye',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Support',

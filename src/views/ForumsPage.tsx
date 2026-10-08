@@ -31,7 +31,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
-        <VideoBg video="" imageAlt="Tarkov hacks guides artwork" />
+        <VideoBg imageAlt="Escape from Tarkov hero background video" />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
           <div className="page-x mt-auto pb-10 sm:pb-14">

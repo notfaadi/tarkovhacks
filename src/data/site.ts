@@ -16,15 +16,31 @@ export const SITE_PURPOSE =
 export const SITE_ABOUT = [
   'tarkov hacks',
   'tarkov hack',
+  'tarkov cheats',
+  'tarkov cheat',
   'escape from tarkov hacks',
+  'escape from tarkov cheats',
   'eft hacks',
+  'eft cheats',
   'tarkov aimbot',
+  'silent aim',
   'tarkov esp',
+  'player esp',
+  'loot esp',
   'tarkov wallhack',
   'tarkov radar hack',
+  'radar hack',
   'battleye tarkov hacks',
+  'battleye status',
   'tarkov cheat aimbot',
+  'tarkov spoofer',
+  'undetected tarkov hacks',
+  'hacks for tarkov',
+  'hacksfortarkov.org',
 ] as const
+
+/** Comma-separated list for `<meta name="keywords">` on every page. */
+export const SEO_KEYWORDS_META = SITE_ABOUT.join(', ')
 
 /** Offer price shown on product schema + purchase UI. */
 export const PRODUCT_PRICE_USD = '35'
@@ -41,6 +57,8 @@ export type PageSeo = {
   description: string
   path: string
   ogType?: 'website' | 'article' | 'product'
+  /** Override default SITE_ABOUT keyword meta when needed */
+  keywords?: string
   /** Prefer /og/*.jpg (1200x630) for Google SERP thumbnails */
   image?: string
   imageAlt?: string
@@ -52,63 +70,64 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'Tarkov Hacks | EFT Aimbot, ESP & Cheats',
+    title: 'Tarkov Hacks | EFT Cheats, Aimbot, ESP, Wallhack & Radar Hack',
     description:
-      'Buy Tarkov hacks for Escape from Tarkov — silent aim aimbot, player and loot ESP, wallhack and radar hack from $35. Check live BattlEye status, then checkout.',
+      'Tarkov hacks and Escape from Tarkov cheats on hacksfortarkov.org — silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35 for Windows PC.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'Tarkov Hacks — EFT aimbot, ESP and radar hack for PC',
+    imageAlt:
+      'Tarkov Hacks — EFT cheats, aimbot, ESP, wallhack, loot ESP and radar hack for PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'Tarkov Hacks Guides | Aimbot, ESP, Radar & Status',
+    title: 'Tarkov Hacks Guides | EFT Aimbot, ESP, Wallhack & BattlEye',
     description:
-      'Tarkov hacks guides hub — silent aim, player and loot ESP, radar hack, antivirus exclusions, loader setup and BattlEye status articles before you buy.',
+      'Tarkov hack guides — setup for aimbot, silent aim, player ESP, loot ESP, wallhack, radar hack, spoofer, antivirus exclusions, loader help and BattlEye status before you buy EFT cheats on hacksfortarkov.org.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'Tarkov Hacks setup guides for aimbot, ESP and BattlEye',
+    imageAlt: 'Tarkov Hacks setup guides for aimbot, ESP, wallhack and BattlEye',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'Tarkov Hacks Reviews | Buyer Feedback on EFT',
+    title: 'Tarkov Hacks Reviews | EFT Cheat, Aimbot & ESP Feedback',
     description:
-      'Read Tarkov hacks reviews covering silent aim, player ESP, loot ESP and BattlEye rebuilds before you buy an Escape from Tarkov license for PC.',
+      'Tarkov hacks reviews for Escape from Tarkov cheats — silent aim aimbot, player ESP, loot ESP, wallhack, radar hack and honest BattlEye rebuild notes from buyers on hacksfortarkov.org.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'Tarkov Hacks buyer reviews for Escape from Tarkov',
+    imageAlt: 'Tarkov Hacks buyer reviews for EFT aimbot, ESP and wallhack',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'Tarkov Hacks FAQ | Price, BattlEye Status & Setup',
+    title: 'Tarkov Hacks FAQ | EFT Cheats Price, BattlEye & Setup',
     description:
-      'FAQ for buying Tarkov hacks on Windows PC — price, aimbot and ESP features, BattlEye status, loader setup and delivery.',
+      'FAQ for Tarkov hacks and EFT cheats — price from $35, aimbot, silent aim, player ESP, loot ESP, wallhack, radar hack, spoofer, BattlEye clear-to-load status, loader setup and delivery on Windows PC.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'Tarkov Hacks FAQ — price, BattlEye and setup',
+    imageAlt: 'Tarkov Hacks FAQ — EFT cheats price, BattlEye status and setup',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'Tarkov Hacks Support | Loader, Delivery & Setup Help',
+    title: 'Tarkov Hacks Support | EFT Loader, Delivery & ESP Help',
     description:
-      'Get help buying and loading Tarkov hacks — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Support for Tarkov hacks and Escape from Tarkov cheats — delivery email, Windows loader setup, antivirus exclusions, aimbot and ESP menu help, inject errors and BattlEye status on hacksfortarkov.org.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'Tarkov Hacks support for loader and delivery help',
+    imageAlt: 'Tarkov Hacks support for loader, aimbot, ESP and delivery help',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'Tarkov Hacks Price & Checkout | Aimbot, ESP, Radar',
+    title: 'Tarkov Hacks Checkout | EFT Aimbot, ESP, Wallhack & Radar',
     description:
-      'Tarkov hacks price and checkout — silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35.',
+      'Buy Tarkov hacks — Escape from Tarkov cheats with silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status. Checkout EFT hacks from $35 on hacksfortarkov.org.',
     path: '/tarkov-hacks',
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'Tarkov aimbot, ESP and radar hack product details',
+    imageAlt: 'Tarkov hacks product — EFT aimbot, ESP, wallhack and radar hack checkout',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>

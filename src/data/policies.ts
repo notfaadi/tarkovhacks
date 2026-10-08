@@ -18,9 +18,9 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'privacy',
     path: '/privacy',
-    title: 'Privacy Policy | Tarkov Hacks PC',
+    title: 'Privacy Policy | Tarkov Hacks & EFT Cheats PC',
     description:
-      'How hacksfortarkov.org handles order details, delivery email, support messages and basic site analytics for Tarkov hacks.',
+      'Privacy policy for Tarkov hacks and Escape from Tarkov cheats on hacksfortarkov.org — order email, delivery, support messages and site analytics for aimbot, ESP and loader purchases.',
     h1: 'Tarkov Hacks Privacy Policy',
     intro:
       'This page explains what we collect when you browse hacksfortarkov.org, buy a Tarkov Hacks license, or contact support — and what we do not collect.',
@@ -66,9 +66,9 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'terms',
     path: '/terms',
-    title: 'Terms of Use | Tarkov Hacks PC',
+    title: 'Terms of Use | Tarkov Hacks & EFT Cheats PC',
     description:
-      'License rules, age limits, BattlEye risk, and liability limits for Tarkov hacks on hacksfortarkov.org.',
+      'Terms for Tarkov hacks and EFT cheats — license rules, BattlEye and anti-cheat risk, aimbot, ESP, wallhack use limits and liability on hacksfortarkov.org.',
     h1: 'Tarkov Hacks Terms of Use',
     intro:
       'Buying or running Tarkov Hacks means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, loot ESP and radar tools for Escape from Tarkov on Windows PC — nothing beyond that.',
@@ -113,9 +113,9 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'refunds',
     path: '/refunds',
-    title: 'Refund Policy | Tarkov Hacks PC',
+    title: 'Refund Policy | Tarkov Hacks & EFT Cheats PC',
     description:
-      'When Tarkov Hacks refunds apply for digital Tarkov licenses, delivery failures, and Updating status windows on hacksfortarkov.org.',
+      'Refund policy for Tarkov hacks and Escape from Tarkov cheat licenses — delivery failures, Updating BattlEye windows and digital EFT hack orders on hacksfortarkov.org.',
     h1: 'Tarkov Hacks Refund Policy',
     intro:
       'Tarkov Hacks licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',
