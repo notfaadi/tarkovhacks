@@ -66,21 +66,23 @@ for (const file of files) {
   if (html.includes('assets-prd.ignimgs.com')) fail(`${page}: contains third-party IGN image`)
   if (html.includes('cdn.cosmocheats.com')) fail(`${page}: contains third-party media hotlink`)
   if (html.includes('SearchAction')) fail(`${page}: contains invalid SearchAction`)
-  if (html.includes('"keywords"')) fail(`${page}: contains keyword-list structured data`)
+  if (/"keywords"\s*:/.test(html)) fail(`${page}: contains keyword-list structured data`)
   if (/forums\/(instructions|how-to-load)/.test(html)) {
     fail(`${page}: links to a retired forum route`)
   }
 }
 
 const home = readFileSync(join(dist, 'index.html'), 'utf8')
-const product = readFileSync(join(dist, 'dayz-cheats', 'index.html'), 'utf8')
+const product = readFileSync(join(dist, 'tarkov-hacks', 'index.html'), 'utf8')
 const reviews = readFileSync(join(dist, 'reviews', 'index.html'), 'utf8')
 const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>Tarkov Hacks | Tarkov Cheat Aimbot, ESP &amp; Hacks</title>')
+  !home.includes(
+    '<title>Tarkov Hacks | EFT Cheats, Aimbot, ESP, Wallhack &amp; Radar Hack</title>',
+  )
 ) {
   fail('Homepage does not own the exact transactional title')
 }
@@ -163,7 +165,7 @@ for (const [name, html] of [
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-')) {
+  if (!html.includes('/media/dayz-') && !html.includes('/videos/tarkov-hero.mp4')) {
     fail(`${name}: missing visible Tarkov media in page body`)
   }
 }
@@ -183,11 +185,11 @@ if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediad
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
 }
 if (
-  /tarkovcheats|Escape from Tarkov|tarkov-reaper|warzonecheats|wardogshacks|theislecheats|\.uk\/|Delta Product|Auron Product/i.test(
+  /tarkovcheats\.io|dayzcheats\.io|tarkov-reaper|warzonecheats|wardogshacks|theislecheats|Delta Product|Auron Product/i.test(
     home + product,
   )
 ) {
-  fail('Built pages still contain legacy Tarkov/Warzone branding')
+  fail('Built pages still contain legacy domain or off-brand product branding')
 }
 
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
@@ -202,8 +204,12 @@ if (!sitemap.includes('/videos/dayz-preview.mp4')) {
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
 }
-if (/tarkovcheats|Tarkov|warzonecheats|Delta Product|Auron Product|Ricochet/i.test(sitemap)) {
-  fail('sitemap.xml still contains legacy Tarkov/Warzone branding')
+if (
+  /tarkovcheats\.io|dayzcheats\.io|warzonecheats|wardogshacks|theislecheats|Delta Product|Auron Product|Call of Duty Ricochet/i.test(
+    sitemap,
+  )
+) {
+  fail('sitemap.xml still contains legacy domain or off-brand game labels')
 }
 const expectedUrls = new Set(
   files

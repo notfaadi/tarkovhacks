@@ -199,7 +199,7 @@ function imagesForPath(path, games, forums) {
     ]
   }
 
-  const game = games.find((g) => path === `/${g.slug}-cheats`)
+  const game = games.find((g) => path === `/${g.slug}-hacks` || path === `/${g.slug}-cheats`)
   if (game) {
     return [
       {
@@ -347,7 +347,7 @@ function videosForPath(path) {
 function collectAllPaths(games, forums, staticRoutes) {
   const paths = new Set([
     ...staticRoutes,
-    ...games.map((game) => `/${game.slug}-cheats`),
+    ...games.map((game) => `/${game.slug}-hacks`),
     ...forums.map((forum) => `/forums/${forum.slug}`),
   ])
   // Never index error page
@@ -361,7 +361,7 @@ function buildSitemap(games, forums, allPaths) {
   const sorted = [...allPaths].sort((a, b) => {
     const rank = (path) => {
       if (path === '/') return 0
-      if (path.endsWith('-cheats')) return 1
+      if (path.endsWith('-hacks') || path.endsWith('-cheats')) return 1
       if (path === '/forums') return 2
       if (path.startsWith('/forums/')) return 3
       if (path === '/reviews') return 4
@@ -405,8 +405,11 @@ function validate(games, forums, allPaths, sitemap) {
     errors.push('Retired forum slug remains indexed')
   }
   for (const game of games) {
-    const page = join(pagesDir, `${game.slug}-cheats.astro`)
-    if (!existsSync(page)) errors.push(`Product route has no page file: /${game.slug}-cheats`)
+    const hacksPage = join(pagesDir, `${game.slug}-hacks.astro`)
+    const cheatsPage = join(pagesDir, `${game.slug}-cheats.astro`)
+    if (!existsSync(hacksPage) && !existsSync(cheatsPage)) {
+      errors.push(`Product route has no page file: /${game.slug}-hacks`)
+    }
   }
   if (forums.length && !existsSync(join(pagesDir, 'forums', '[slug].astro'))) {
     errors.push('Forum routes have no dynamic page file: src/pages/forums/[slug].astro')
@@ -447,8 +450,12 @@ function validate(games, forums, allPaths, sitemap) {
   if (!sitemap.includes(siteUrl(PREVIEW_VIDEO))) {
     errors.push('Sitemap missing Tarkov preview video content_loc')
   }
-  if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
-    errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
+  if (
+    /dayzcheats\.io|tarkovcheats\.io|warzonecheats|wardogshacks|theisle\.|Warzone Cheats|Call of Duty Ricochet/i.test(
+      sitemap,
+    )
+  ) {
+    errors.push('Sitemap still contains legacy domain or off-brand game labels')
   }
   if (!sitemap.includes('hacksfortarkov.org')) {
     errors.push('Sitemap must target hacksfortarkov.org')

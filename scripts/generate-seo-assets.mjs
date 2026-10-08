@@ -127,6 +127,13 @@ const staticOg = [
     subtitle: 'Features, BattlEye status and price',
   },
   {
+    file: 'tarkov-hacks.jpg',
+    source: coverArt,
+    eyebrow: 'PRODUCT DETAILS',
+    title: 'Tarkov Hacks — Aimbot, ESP & Radar',
+    subtitle: 'Features, BattlEye status and price',
+  },
+  {
     file: 'forums.jpg',
     source: menuGif,
     eyebrow: 'GUIDES',

@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://hacksfortarkov.org/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/" />
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/tarkov-hacks</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/tarkov-hacks" />
@@ -55,18 +55,18 @@
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
-      <image:title>Tarkov Hacks Product Hero</image:title>
-      <image:caption>Hero artwork for Tarkov Aimbot, ESP and radar hack product details.</image:caption>
+      <image:title>Escape from Tarkov Cheats Product Hero</image:title>
+      <image:caption>Hero artwork for Escape from Tarkov Aimbot, ESP and radar hack product details.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
-      <image:title>Tarkov Hacks Menu Preview</image:title>
-      <image:caption>Menu and Aimbot settings preview for Tarkov hacks.</image:caption>
+      <image:title>Escape from Tarkov Cheats Menu Preview</image:title>
+      <image:caption>Menu and Aimbot settings preview for Escape from Tarkov cheats.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>Tarkov ESP Gameplay</image:title>
-      <image:caption>Player ESP and wallhack preview for Tarkov.</image:caption>
+      <image:title>Escape from Tarkov ESP Gameplay</image:title>
+      <image:caption>Player ESP and wallhack preview for Escape from Tarkov.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-video-thumb.jpg</image:loc>
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/forums</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/forums" />
@@ -110,7 +110,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-aimbot-settings.jpg</image:loc>
       <image:title>Tarkov Aimbot Settings for Silent Aim Open Graph</image:title>
-      <image:caption>Tarkov Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your Tarkov hack looks legit on official and private servers. Start conservative, then save configs.</image:caption>
+      <image:caption>Tarkov aimbot settings for EFT cheats on PC: silent aim, FOV, smoothing and visible-check so Escape from Tarkov hacks look legit. Tarkov cheat aimbot configs on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
@@ -128,7 +128,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-battleye-status.jpg</image:loc>
       <image:title>Tarkov BattlEye Status: Clear to Load vs Updating Open Graph</image:title>
-      <image:caption>Tarkov BattlEye status explained for Tarkov hacks: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.</image:caption>
+      <image:caption>BattlEye status for Tarkov hacks and EFT cheats: clear-to-load vs Updating, undetected windows, and why Escape from Tarkov hack buyers wait on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
@@ -146,7 +146,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-complete-setup.jpg</image:loc>
       <image:title>Complete Tarkov Hacks Setup Open Graph</image:title>
-      <image:caption>Complete Tarkov hacks setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.</image:caption>
+      <image:caption>Complete Escape from Tarkov hacks setup: EFT cheats load order, antivirus exclusions, aimbot and ESP first run, spoofer steps and BattlEye re-check on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
@@ -164,7 +164,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-disable-antivirus.jpg</image:loc>
       <image:title>Antivirus Exclusions for Tarkov Hacks Open Graph</image:title>
-      <image:caption>Allowlist Tarkov hacks loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+      <image:caption>Antivirus exclusions for Tarkov hacks and Escape from Tarkov cheat loaders - Defender allowlist, quarantine restore and EFT hack delivery folder on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-control-art.jpg</image:loc>
@@ -182,7 +182,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-esp-wallhack-guide.jpg</image:loc>
       <image:title>Tarkov ESP and Wallhack Setup Open Graph</image:title>
-      <image:caption>Tarkov ESP and wallhack setup: survivor boxes, skeletons, distance, health, infected ESP and loot highlighting. Clean HUD defaults for Tarkov hacks on PC.</image:caption>
+      <image:caption>Tarkov ESP and wallhack setup for EFT hacks: player boxes, loot ESP, distance, health and scav tracking. Escape from Tarkov cheats HUD defaults on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-esp-gameplay.gif</image:loc>
@@ -200,7 +200,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-features-list.jpg</image:loc>
       <image:title>Tarkov Cheat Features Checklist Open Graph</image:title>
-      <image:caption>Tarkov hack features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on hacksfortarkov.org from $35. Compare modules before you buy.</image:caption>
+      <image:caption>Tarkov hack and EFT cheats features checklist: silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and BattlEye status on hacksfortarkov.org from $35 before checkout.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
@@ -218,7 +218,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-hotkeys.jpg</image:loc>
       <image:title>Tarkov Hacks Hotkeys After Load Open Graph</image:title>
-      <image:caption>Tarkov hacks hotkeys after checkout: open menu, Aimbot toggle, player ESP, loot ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
+      <image:caption>Tarkov hacks hotkeys for EFT cheats: menu, aimbot toggle, player ESP, loot ESP, wallhack, radar hack and stream-proof binds after checkout on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
@@ -236,7 +236,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-loader-errors.jpg</image:loc>
       <image:title>Fix Tarkov Hacks Loader Errors Open Graph</image:title>
-      <image:caption>Fix Tarkov hacks loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.</image:caption>
+      <image:caption>Fix Tarkov hacks loader errors for EFT cheats on Windows: inject failed, menu not opening, antivirus quarantine and overlay conflicts - check BattlEye status on hacksfortarkov.org first.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-tactical-art.jpg</image:loc>
@@ -254,7 +254,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-radar-hack-guide.jpg</image:loc>
       <image:title>Tarkov Radar Hack Overlay Guide Open Graph</image:title>
-      <image:caption>Tarkov radar hack guide for PC: 2D radar overlay, off-screen survivor tracking and safer military loot approaches. Pair with ESP for Tarkov hacks that stay readable.</image:caption>
+      <image:caption>Tarkov radar hack guide for EFT cheats on PC: 2D overlay, off-screen PMC tracking and safer extracts. Pair radar hack with ESP and wallhack on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
@@ -272,7 +272,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-raid-play-guide.jpg</image:loc>
       <image:title>Safer Tarkov Cheat Settings for Loot Runs Open Graph</image:title>
-      <image:caption>Safer Tarkov hack settings for loot runs and survival: ESP-first play, mild silent aim, loot highlighting, radar hack and BattlEye habits that reduce report risk on private servers.</image:caption>
+      <image:caption>Safer Tarkov cheat settings for EFT loot runs: ESP-first, loot ESP, mild silent aim, radar hack and wallhack habits that reduce report risk on Escape from Tarkov raids.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-box.jpg</image:loc>
@@ -290,7 +290,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-stream-proof-setup.jpg</image:loc>
       <image:title>Stream-Proof Tarkov Hacks for OBS Open Graph</image:title>
-      <image:caption>Stream-proof Tarkov hacks for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
+      <image:caption>Stream-proof Tarkov hacks for OBS: hide EFT ESP, wallhack and aimbot overlays from clips while keeping local view. Escape from Tarkov cheats stream setup on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-home-art.jpg</image:loc>
@@ -308,7 +308,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-undetected-status.jpg</image:loc>
       <image:title>BattlEye Status Checklist Before You Buy or Load Open Graph</image:title>
-      <image:caption>BattlEye status checklist for Tarkov hacks: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.</image:caption>
+      <image:caption>BattlEye checklist before you buy Tarkov hacks or EFT cheats: confirm clear-to-load, avoid Updating builds, and re-check Escape from Tarkov hack status every patch.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
@@ -326,7 +326,7 @@
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/forums-windows-setup.jpg</image:loc>
       <image:title>Tarkov Hacks on Windows 10 and 11 Open Graph</image:title>
-      <image:caption>Windows 10 and 11 setup for Tarkov hacks: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against BattlEye.</image:caption>
+      <image:caption>Windows 10/11 setup for Tarkov hacks and EFT cheats: overlays off, Defender exclusions, admin loader rights and clean BattlEye first load on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
@@ -336,7 +336,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/reviews</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/reviews" />
@@ -349,7 +349,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/faq</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/faq" />
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/support</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/support" />
@@ -375,7 +375,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/privacy</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/privacy" />
@@ -388,7 +388,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/refunds</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/refunds" />
@@ -401,7 +401,7 @@
   </url>
   <url>
     <loc>https://hacksfortarkov.org/terms</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/terms" />
