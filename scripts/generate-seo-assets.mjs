@@ -80,6 +80,14 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
   `)
 }
 
+/** Plain 1200x630 crop — matches live hero wallpaper (Discord / social previews). */
+async function writeShareHeroJpeg(outPath, sourcePath) {
+  await sharp(sourcePath)
+    .resize(1200, 630, { fit: 'cover', position: 'centre' })
+    .jpeg({ quality: 92, chromaSubsampling: '4:4:4', mozjpeg: true })
+    .toFile(outPath)
+}
+
 async function writeOgJpeg(outPath, sourcePath, eyebrow, title, subtitle) {
   const base = sharp(sourcePath).resize(1200, 630, { fit: 'cover', position: 'centre' })
   const overlay = sharp(overlaySvg(1200, 630, eyebrow, title, subtitle))
@@ -188,6 +196,10 @@ const staticOg = [
 ]
 
 const created = []
+
+const shareHeroOut = join(ogDir, 'share-hero.jpg')
+await writeShareHeroJpeg(shareHeroOut, heroOg)
+created.push('share-hero.jpg')
 
 for (const item of staticOg) {
   const out = join(ogDir, item.file)

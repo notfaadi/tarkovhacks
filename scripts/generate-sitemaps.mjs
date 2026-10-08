@@ -24,7 +24,7 @@ const HOME_ART = '/media/dayz-home-art.jpg'
 const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
 const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
 const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
-const OG_DEFAULT = '/og/tarkov-hacks.jpg'
+const OG_DEFAULT = '/og/share-hero.jpg'
 
 const ALL_SITE_IMAGES = [
   HERO_FULL,
@@ -36,8 +36,7 @@ const ALL_SITE_IMAGES = [
   HOME_ART,
   TACTICAL_ART,
   VIDEO_THUMB,
-  '/og/home.jpg',
-  '/og/tarkov-hacks.jpg',
+  '/og/share-hero.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -172,7 +171,7 @@ function imagesForPath(path, games, forums) {
   if (path === '/') {
     return [
       {
-        src: '/og/home.jpg',
+        src: '/og/share-hero.jpg',
         title: 'Tarkov Hacks Open Graph',
         caption: 'Google and social preview image for hacksfortarkov.org homepage.',
       },

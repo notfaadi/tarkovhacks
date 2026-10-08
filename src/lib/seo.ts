@@ -129,10 +129,8 @@ export function productCoreJsonLd() {
     description: SITE_PURPOSE,
     url: `${SITE_URL}/tarkov-hacks`,
     image: [
-      absoluteAsset('/og/tarkov-hacks.jpg'),
-      absoluteAsset('/og/home.jpg'),
-      absoluteAsset(PAGE_MEDIA.product.image),
-      absoluteAsset(PAGE_MEDIA.home.image),
+      absoluteAsset('/og/share-hero.jpg'),
+      absoluteAsset('/media/tarkov-hero-og.jpg'),
     ],
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },

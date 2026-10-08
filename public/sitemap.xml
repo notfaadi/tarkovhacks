@@ -11,7 +11,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://hacksfortarkov.org/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hacksfortarkov.org/" />
     <image:image>
-      <image:loc>https://hacksfortarkov.org/og/home.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/og/share-hero.jpg</image:loc>
       <image:title>Tarkov Hacks Open Graph</image:title>
       <image:caption>Google and social preview image for hacksfortarkov.org homepage.</image:caption>
     </image:image>
@@ -31,7 +31,7 @@
       <image:caption>Thumbnail for the Tarkov Aimbot and ESP preview video.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/og/tarkov-hacks.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/og/share-hero.jpg</image:loc>
       <image:title>Tarkov Hacks Product Social Preview</image:title>
       <image:caption>Default Open Graph image for hacksfortarkov.org product pages.</image:caption>
     </image:image>

@@ -221,8 +221,7 @@ const pageLocs = urlBlocks.map((block) => block.match(/<loc>([^<]+)<\/loc>/)?.[1
 const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
-  '/og/home.jpg',
-  '/og/tarkov-hacks.jpg',
+  '/og/share-hero.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -301,6 +300,7 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 }
 
 for (const asset of [
+  'public/og/share-hero.jpg',
   'public/og/home.jpg',
   'public/og/tarkov-hacks.jpg',
   'public/og/forums.jpg',
