@@ -7,9 +7,9 @@ export type Game = {
   popular?: boolean
 }
 
-/** Site is DayZ cheats only — no other titles in the catalog. */
+/** Site is Escape from Tarkov hacks only — no other titles in the catalog. */
 export const GAMES: Game[] = [
-  { slug: 'dayz', name: 'DayZ', status: 'Undetected', popular: true },
+  { slug: 'tarkov', name: 'Escape from Tarkov', status: 'Undetected', popular: true },
 ]
 
 export function getGame(slug: string) {
@@ -17,42 +17,44 @@ export function getGame(slug: string) {
 }
 
 export function guidePath(slug: string) {
-  return `/${slug.toLowerCase()}-cheats`
+  return `/${slug.toLowerCase()}-hacks`
 }
 
 export function parseGuideSlug(param: string) {
   const lower = param.toLowerCase()
-  return lower.endsWith('-cheats') ? lower.slice(0, -7) : lower
+  if (lower.endsWith('-hacks')) return lower.slice(0, -6)
+  if (lower.endsWith('-cheats')) return lower.slice(0, -7)
+  return lower
 }
 
 export const GUIDE_FEATURES = [
   {
-    name: 'DayZ Aimbot (silent aim)',
-    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near a survivor and still land the hit, so it reads as legit even when an admin spectates.',
+    name: 'Tarkov Aimbot (silent aim)',
+    text: 'Silent-aim tracking with FOV, smoothing and bone selection — land shots that read legit even when spectated on Escape from Tarkov.',
   },
   {
     name: 'Player ESP / Wallhack',
-    text: 'See survivors through walls and treelines with distance, health and gear information when the build supports it — tell friendlies from hostiles instantly.',
+    text: 'See PMCs and player scavs through walls with distance, health and gear when the build supports it — tell threats from teammates fast.',
   },
   {
-    name: 'Infected ESP',
-    text: 'Track infected before they track you, so a loot run in Cherno or Elektro never turns into a zombie train at the worst moment.',
+    name: 'Scav & Boss ESP',
+    text: 'Track scavs and bosses before they push your angle so a loot run on Customs or Streets does not turn into a wipe.',
   },
   {
     name: 'Loot & Item ESP',
-    text: 'Highlight guns, ammo, medical supplies and rare gear by category so you skip empty houses and gear up in minutes instead of hours.',
+    text: 'Highlight weapons, ammo, meds and high-value loot by category so you skip dead raids and extract with profit.',
   },
   {
     name: 'Radar Hack',
-    text: '2D radar awareness for off-screen survivors across Chernarus and Livonia — spot the third party before it reaches your position.',
+    text: '2D radar for off-screen players across Tarkov maps — spot the third party before it reaches your extract.',
   },
   {
-    name: 'Base & Stash Intel',
-    text: 'Spot player bases, tents and buried stashes on private servers so raids land on full storage instead of empty walls.',
+    name: 'Quest & Key Intel',
+    text: 'Spot quest items and key locations faster on long wipe grinds instead of tabbing out to wiki pages.',
   },
   {
     name: 'Official & modded server support',
-    text: 'Works on official DayZ servers and on private servers running most common mod setups.',
+    text: 'Built for live Escape from Tarkov on Windows PC with status updates after BattlEye patches.',
   },
   {
     name: 'Spoofer + Cleaner',
@@ -60,7 +62,7 @@ export const GUIDE_FEATURES = [
   },
   {
     name: 'BattlEye status + support',
-    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and DayZ patches before you load.',
+    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and Tarkov patches before you load.',
   },
 ] as const
 

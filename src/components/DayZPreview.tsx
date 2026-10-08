@@ -1,13 +1,13 @@
 import { DAYZ_HOME_VIDEO } from '../data/media'
 
-type DayZPreviewProps = {
+type TarkovPreviewProps = {
   className?: string
   /** Wider crop on product page */
   wide?: boolean
 }
 
-/** Self-hosted DayZ preview scraped from battlelog (mediadelivery embeds 403 off-domain). */
-export function DayZPreview({ className = '', wide = false }: DayZPreviewProps) {
+/** Self-hosted Tarkov preview scraped from battlelog (mediadelivery embeds 403 off-domain). */
+export function TarkovPreview({ className = '', wide = false }: TarkovPreviewProps) {
   return (
     <div className={`video-brand-mask border border-z-soft/20 ${className}`.trim()}>
       <div

@@ -1,21 +1,21 @@
 import { blogPath } from './blog-paths'
 
-/** Official DayZ destinations for factual game context. */
+/** Official Escape from Tarkov destinations for factual game context. */
 export const OFFICIAL_DAYZ_LINKS = [
   {
-    label: 'DayZ',
-    href: 'https://dayz.com/',
-    description: 'Official DayZ game site',
+    label: 'Escape from Tarkov',
+    href: 'https://www.escapefromtarkov.com/',
+    description: 'Official Escape from Tarkov game site',
   },
   {
-    label: 'DayZ on Steam',
-    href: 'https://store.steampowered.com/app/221100/DayZ/',
+    label: 'Escape from Tarkov on Steam',
+    href: 'https://store.steampowered.com/app/1938090/Escape_from_Tarkov/',
     description: 'Official PC store page and client download',
   },
   {
-    label: 'Bohemia Interactive Support',
-    href: 'https://www.bohemia.net/',
-    description: 'Publisher support and account help',
+    label: 'Battlestate Games',
+    href: 'https://www.battlestategames.com/',
+    description: 'Developer support and account help',
   },
 ] as const
 
@@ -24,7 +24,7 @@ export const SITE_PAGE_LINKS = [
   { label: 'Home', to: '/', description: 'Live status, price and checkout' },
   {
     label: 'Product page',
-    to: '/dayz-cheats',
+    to: '/tarkov-hacks',
     description: 'Aimbot, ESP, loot ESP, radar hack and compatibility details',
   },
   {
@@ -82,7 +82,7 @@ export const SITE_GUIDE_LINKS = [
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
 const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/dayz-cheats'
+const CHECKOUT_PRODUCT = '/products/tarkov-hacks'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 

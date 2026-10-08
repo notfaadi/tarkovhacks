@@ -1,6 +1,6 @@
 /**
  * Canonical 1200x630 JPEG Open Graph images for Google SERP thumbnails.
- * Every indexed URL maps to a unique crawlable /og/*.jpg under dayzcheats.io.
+ * Every indexed URL maps to a unique crawlable /og/*.jpg under hacksfortarkov.org.
  */
 
 export const OG_HOME = '/og/home.jpg'
@@ -23,7 +23,7 @@ export function forumOgImage(slug: string) {
 /** Resolve the Open Graph JPEG for any site path. */
 export function getOgImageForPath(path?: string): string {
   if (!path || path === '/') return OG_HOME
-  if (path === '/dayz-cheats' || path === '/dayz-hacks') return OG_PRODUCT
+  if (path === '/tarkov-hacks' || path === '/dayz-hacks') return OG_PRODUCT
   if (path === '/forums') return OG_FORUMS
   if (path === '/reviews') return OG_REVIEWS
   if (path === '/faq') return OG_FAQ

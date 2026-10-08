@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Auto-generate 1200x630 JPEG Open Graph images for every indexed URL.
  * Google SERP / social crawlers fetch these for right-side thumbnails.
  * Never overwrites battlelog-sourced /media assets.
@@ -44,7 +44,7 @@ const requiredBattlelog = [
 
 for (const path of requiredBattlelog) {
   if (!(await exists(path))) {
-    throw new Error(`Missing DayZ media asset (do not regenerate): ${path}`)
+    throw new Error(`Missing Tarkov media asset (do not regenerate): ${path}`)
   }
 }
 
@@ -72,7 +72,7 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
         )
         .join('\n')}
       <text x="64" y="480" fill="#c9bdd2" font-size="26" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">dayzcheats.io</text>
+      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">hacksfortarkov.org</text>
     </svg>
   `)
 }
@@ -116,42 +116,42 @@ const staticOg = [
     file: 'home.jpg',
     source: heroFull,
     eyebrow: 'DAYZ CHEATS',
-    title: 'DayZ Aimbot, ESP & Radar Hack',
-    subtitle: 'DayZ cheats from $35 · live BattlEye status',
+    title: 'Tarkov Aimbot, ESP & Radar Hack',
+    subtitle: 'Tarkov hacks from $35 · live BattlEye status',
   },
   {
     file: 'dayz-cheats.jpg',
     source: coverArt,
     eyebrow: 'PRODUCT DETAILS',
-    title: 'DayZ Aimbot, ESP & Radar',
+    title: 'Tarkov Aimbot, ESP & Radar',
     subtitle: 'Features, BattlEye status and price',
   },
   {
     file: 'forums.jpg',
     source: menuGif,
     eyebrow: 'GUIDES',
-    title: 'DayZ Cheats Setup Forums',
+    title: 'Tarkov Hacks Setup Forums',
     subtitle: 'Aimbot, ESP, loader and BattlEye guides',
   },
   {
     file: 'reviews.jpg',
     source: espGif,
     eyebrow: 'REVIEWS',
-    title: 'DayZ Cheats Buyer Reviews',
-    subtitle: 'Real DayZ Aimbot and ESP feedback',
+    title: 'Tarkov Hacks Buyer Reviews',
+    subtitle: 'Real Tarkov Aimbot and ESP feedback',
   },
   {
     file: 'faq.jpg',
     source: menuGif,
     eyebrow: 'FAQ',
-    title: 'DayZ Cheats FAQ',
+    title: 'Tarkov Hacks FAQ',
     subtitle: 'Price, BattlEye status and setup answers',
   },
   {
     file: 'support.jpg',
     source: videoThumb,
     eyebrow: 'SUPPORT',
-    title: 'DayZ Cheats Support',
+    title: 'Tarkov Hacks Support',
     subtitle: 'Loader, delivery and Windows help',
   },
   {
@@ -159,14 +159,14 @@ const staticOg = [
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
-    subtitle: 'How dayzcheats.io handles order data',
+    subtitle: 'How hacksfortarkov.org handles order data',
   },
   {
     file: 'terms.jpg',
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Terms of Use',
-    subtitle: 'License rules for DayZ Cheats',
+    subtitle: 'License rules for Tarkov Hacks',
   },
   {
     file: 'refunds.jpg',
@@ -192,8 +192,8 @@ if (!forums.length) {
   for (const slug of loadForumSlugs(blogsSrc)) {
     forums.push({
       slug,
-      title: `DayZ Cheats ${slug}`,
-      description: 'DayZ cheats guide on dayzcheats.io',
+      title: `Tarkov Hacks ${slug}`,
+      description: 'Tarkov hacks guide on hacksfortarkov.org',
     })
   }
 }
@@ -212,7 +212,7 @@ for (const forum of forums) {
     source,
     'DAYZ GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
-    'DayZ cheats · dayzcheats.io',
+    'Tarkov hacks · hacksfortarkov.org',
   )
   created.push(file)
 }
@@ -236,9 +236,9 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 }
 
 for (const [name, eyebrow, title, subtitle] of [
-  ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'DayZ Cheats', 'Aimbot · ESP · Loot ESP · BattlEye'],
-  ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'DayZ ESP & Radar', 'Built for DayZ survival runs'],
-  ['dayz-home-art.jpg', 'dayzcheats.io', 'DayZ Cheats', 'Aimbot, ESP, wallhack and radar hack'],
+  ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'Tarkov Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
+  ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'Tarkov ESP & Radar', 'Built for Tarkov survival runs'],
+  ['dayz-home-art.jpg', 'hacksfortarkov.org', 'Tarkov Hacks', 'Aimbot, ESP, wallhack and radar hack'],
 ]) {
   const path = join(mediaDir, name)
   if (

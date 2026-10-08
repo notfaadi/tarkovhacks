@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '../data/faqs'
+import type { FaqItem } from '../data/faqs'
 import {
   OG_IMAGE,
   PRODUCT_PRICE_USD,
@@ -41,10 +41,10 @@ export function siteIdentityGraph() {
       '@id': `${SITE_URL}/#organization`,
       name: SITE_NAME,
       alternateName: [
-        'DayZ Hacks',
-        'DayZ Standalone Cheats',
-        'dayzcheats.io',
-        'DayZ Aimbot ESP',
+        'Tarkov Hacks',
+        'Escape from Tarkov Cheats',
+        'hacksfortarkov.org',
+        'Tarkov Aimbot ESP',
       ],
       url: SITE_URL,
       description: SITE_PURPOSE,
@@ -68,9 +68,9 @@ export function siteIdentityGraph() {
       inLanguage: 'en',
       about: {
         '@type': 'Thing',
-        name: 'DayZ cheats',
+        name: 'Tarkov hacks',
         description:
-          'Commercial DayZ cheats for PC — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and BattlEye status.',
+          'Commercial Tarkov hacks for PC — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and BattlEye status.',
       },
       publisher: { '@id': `${SITE_URL}/#organization` },
     },
@@ -90,7 +90,7 @@ export function webPageNode(seo: PageSeo) {
     inLanguage: 'en',
   } as Record<string, unknown>
   const hasVisibleImage =
-    ['/', '/dayz-cheats', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
+    ['/', '/tarkov-hacks', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
   // Text pages (faq/support/reviews) still expose OG as WebPage.image for social crawlers
   const hasOgImage = Boolean(seo.image)
   if (hasVisibleImage || hasOgImage) {
@@ -110,17 +110,17 @@ export function productCoreJsonLd() {
   return {
     '@type': 'Product',
     '@id': PRODUCT_ID,
-    name: 'DayZ Cheats',
+    name: 'Tarkov Hacks',
     alternateName: [
-      'DayZ Hacks',
-      'DayZ Standalone Cheats',
-      'DayZ Aimbot',
-      'DayZ ESP',
-      'DayZ Wallhack',
-      'DayZ Radar Hack',
+      'Tarkov Hacks',
+      'Escape from Tarkov Cheats',
+      'Tarkov Aimbot',
+      'Tarkov ESP',
+      'Tarkov Wallhack',
+      'Tarkov Radar Hack',
     ],
     description: SITE_PURPOSE,
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/tarkov-hacks`,
     image: [
       absoluteAsset('/og/dayz-cheats.jpg'),
       absoluteAsset('/og/home.jpg'),
@@ -130,12 +130,12 @@ export function productCoreJsonLd() {
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },
     category: 'PC game software',
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, 'https://schema.org/InStock'),
+    offers: baseOffer(`${SITE_URL}/tarkov-hacks`, 'https://schema.org/InStock'),
     subjectOf: {
       '@type': 'VideoObject',
-      name: 'DayZ Cheats Aimbot and ESP preview',
+      name: 'Tarkov Hacks Aimbot and ESP preview',
       description:
-        'Preview of DayZ Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
+        'Preview of Tarkov Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
       thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
       contentUrl: absoluteAsset('/videos/dayz-preview.mp4'),
       uploadDate: '2026-09-16',
@@ -149,12 +149,12 @@ export function productDetailJsonLd(status: GameStatus) {
     status === 'Undetected' ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/tarkov-hacks`,
     image: absoluteAsset(PAGE_MEDIA.product.image),
     about: {
       '@type': 'VideoGame',
-      name: 'DayZ',
-      alternateName: ['DayZ Standalone', 'DayZ SA'],
+      name: 'Tarkov',
+      alternateName: ['Escape from Tarkov', 'Tarkov SA'],
       publisher: { '@type': 'Organization', name: 'Bohemia Interactive' },
       gamePlatform: 'PC',
     },
@@ -169,11 +169,11 @@ export function productDetailJsonLd(status: GameStatus) {
       {
         '@type': 'PropertyValue',
         name: 'Servers',
-        value: 'Official DayZ servers and private servers with common mods',
+        value: 'Official Tarkov servers and private servers with common mods',
       },
       { '@type': 'PropertyValue', name: 'Status', value: status },
     ],
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, availability),
+    offers: baseOffer(`${SITE_URL}/tarkov-hacks`, availability),
   }
 }
 
@@ -181,7 +181,7 @@ export function productReviewsJsonLd() {
   const aggregate = getReviewsAggregate()
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/tarkov-hacks`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: aggregate.ratingValue,
@@ -194,7 +194,7 @@ export function productReviewsJsonLd() {
       author: { '@type': 'Person', name: review.author },
       datePublished: review.datePublished,
       reviewBody: review.body,
-      name: `${review.author} DayZ Cheats review`,
+      name: `${review.author} Tarkov Hacks review`,
       reviewRating: {
         '@type': 'Rating',
         ratingValue: String(review.rating),

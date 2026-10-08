@@ -8,7 +8,10 @@ export type SeoMediaItem = {
   videoDescription?: string
 }
 
-/** DayZ product art + menu stills (self-hosted). */
+/** Full-bleed homepage hero loop (Escape from Tarkov live wallpaper). */
+export const TARKOV_HERO_VIDEO = '/videos/tarkov-hero.mp4'
+
+/** Tarkov product art + menu stills (self-hosted). */
 export const DAYZ_HERO = '/media/dayz-hero-full.webp'
 export const DAYZ_SOLDIER = '/media/dayz-hero-full.webp'
 export const DAYZ_COVER = '/media/dayz-cover.webp'
@@ -21,54 +24,54 @@ export const DAYZ_CONTROL = '/media/dayz-control-art.jpg'
 export const DAYZ_TACTICAL = '/media/dayz-tactical-art.jpg'
 export const DAYZ_VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
 
-/** Self-hosted DayZ Reaper preview (Bunny Stream GUID ee0735e7-…). */
+/** Self-hosted Tarkov Reaper preview (Bunny Stream GUID ee0735e7-…). */
 export const DAYZ_HOME_VIDEO = {
   id: 'ee0735e7-c9a3-4072-b818-98e2bb7f07ff',
   src: '/videos/dayz-preview.mp4',
   poster: DAYZ_VIDEO_THUMB,
-  title: 'DayZ Cheats Aimbot and ESP preview',
-  caption: 'Preview of DayZ Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
+  title: 'Tarkov Hacks Aimbot and ESP preview',
+  caption: 'Preview of Tarkov Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
 } as const
 
 export const PAGE_MEDIA = {
   home: {
     image: DAYZ_SOLDIER,
-    alt: 'DayZ cheats Aimbot and ESP product artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats for DayZ Standalone',
-    caption: 'Feature overview for DayZ Aimbot, ESP, wallhack, loot ESP and radar hack.',
+    alt: 'Tarkov hacks Aimbot and ESP product artwork for Escape from Tarkov on PC',
+    title: 'Tarkov Hacks for Escape from Tarkov',
+    caption: 'Feature overview for Tarkov Aimbot, ESP, wallhack, loot ESP and radar hack.',
   },
   product: {
     image: DAYZ_COVER,
     video: DAYZ_HOME_VIDEO.src,
-    alt: 'DayZ ESP, silent aim Aimbot and loot highlight feature artwork',
-    title: 'DayZ Aimbot, ESP and Radar Hack Features',
-    caption: 'Product overview for DayZ Standalone on Windows PC.',
+    alt: 'Tarkov ESP, silent aim Aimbot and loot highlight feature artwork',
+    title: 'Tarkov Aimbot, ESP and Radar Hack Features',
+    caption: 'Product overview for Escape from Tarkov on Windows PC.',
     videoTitle: DAYZ_HOME_VIDEO.title,
     videoDescription: DAYZ_HOME_VIDEO.caption,
   },
   forums: {
     image: DAYZ_HERO,
-    alt: 'DayZ cheats product artwork',
-    title: 'DayZ Cheats Guides',
+    alt: 'Tarkov hacks product artwork',
+    title: 'Tarkov Hacks Guides',
     caption: 'Reference for setup, Aimbot, ESP, loot and BattlEye status articles.',
   },
   reviews: {
     image: DAYZ_ESP,
-    alt: 'DayZ cheats ESP gameplay review artwork',
-    title: 'DayZ Cheats Reviews',
-    caption: 'Feature and compatibility feedback for DayZ cheats.',
+    alt: 'Tarkov hacks ESP gameplay review artwork',
+    title: 'Tarkov Hacks Reviews',
+    caption: 'Feature and compatibility feedback for Tarkov hacks.',
   },
   faq: {
     image: DAYZ_MENU,
-    alt: 'DayZ cheats menu artwork for the FAQ',
-    title: 'DayZ Cheats FAQ',
-    caption: 'Compatibility, status and setup answers for DayZ Standalone.',
+    alt: 'Tarkov hacks menu artwork for the FAQ',
+    title: 'Tarkov Hacks FAQ',
+    caption: 'Compatibility, status and setup answers for Escape from Tarkov.',
   },
   support: {
     image: DAYZ_HERO,
-    alt: 'DayZ cheats support artwork',
-    title: 'DayZ Cheats Support',
-    caption: 'Delivery, loader and setup help for DayZ cheats.',
+    alt: 'Tarkov hacks support artwork',
+    title: 'Tarkov Hacks Support',
+    caption: 'Delivery, loader and setup help for Tarkov hacks.',
   },
 } as const satisfies Record<string, SeoMediaItem>
 
@@ -86,9 +89,9 @@ const FORUM_MEDIA: Record<string, SeoMediaItem> = {
   'windows-setup': { ...PAGE_MEDIA.support },
   'raid-play-guide': {
     image: DAYZ_BOX,
-    alt: 'DayZ survival and loot run cheats artwork',
-    title: 'DayZ Survival and Loot Run Cheats Guide',
-    caption: 'Loot run tips for DayZ Aimbot, ESP and radar hack.',
+    alt: 'Tarkov survival and loot run cheats artwork',
+    title: 'Tarkov Survival and Loot Run Cheats Guide',
+    caption: 'Loot run tips for Tarkov Aimbot, ESP and radar hack.',
   },
   'loader-errors': { ...PAGE_MEDIA.support },
 }
