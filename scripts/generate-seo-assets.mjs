@@ -36,19 +36,10 @@ async function exists(path) {
 /** Frame from /videos/tarkov-hero.mp4 — matches live homepage wallpaper (no DayZ box art). */
 const heroOg = join(mediaDir, 'tarkov-hero-og.jpg')
 
-const requiredBattlelog = [
-  join(mediaDir, 'dayz-hero-full.webp'),
-  join(mediaDir, 'dayz-cover.webp'),
-  join(mediaDir, 'dayz-box.jpg'),
-  join(mediaDir, 'dayz-menu.gif'),
-  join(mediaDir, 'dayz-esp-gameplay.gif'),
-  join(mediaDir, 'dayz-video-thumb.jpg'),
-  heroOg,
-]
-
-for (const path of requiredBattlelog) {
+const heroVideo = join(root, 'public', 'videos', 'tarkov-hero.mp4')
+for (const path of [heroOg, heroVideo]) {
   if (!(await exists(path))) {
-    throw new Error(`Missing Tarkov media asset (do not regenerate): ${path}`)
+    throw new Error(`Missing Tarkov hero asset: ${path}`)
   }
 }
 function overlaySvg(width, height, eyebrow, title, subtitle) {
@@ -116,12 +107,6 @@ function loadForumMeta(src) {
   }))
 }
 
-const heroFull = join(mediaDir, 'dayz-hero-full.webp')
-const coverArt = join(mediaDir, 'dayz-cover.webp')
-const espGif = join(mediaDir, 'dayz-esp-gameplay.gif')
-const menuGif = join(mediaDir, 'dayz-menu.gif')
-const videoThumb = join(mediaDir, 'dayz-video-thumb.jpg')
-
 const staticOg = [
   {
     file: 'home.jpg',
@@ -129,13 +114,6 @@ const staticOg = [
     eyebrow: 'TARKOV HACKS',
     title: 'Tarkov Aimbot, ESP & Radar Hack',
     subtitle: 'Tarkov hacks from $35 · live BattlEye status',
-  },
-  {
-    file: 'dayz-cheats.jpg',
-    source: heroOg,
-    eyebrow: 'TARKOV HACKS',
-    title: 'Tarkov Aimbot, ESP & Radar',
-    subtitle: 'Features, BattlEye status and price',
   },
   {
     file: 'tarkov-hacks.jpg',
@@ -146,28 +124,28 @@ const staticOg = [
   },
   {
     file: 'forums.jpg',
-    source: menuGif,
+    source: heroOg,
     eyebrow: 'GUIDES',
     title: 'Tarkov Hacks Setup Forums',
     subtitle: 'Aimbot, ESP, loader and BattlEye guides',
   },
   {
     file: 'reviews.jpg',
-    source: espGif,
+    source: heroOg,
     eyebrow: 'REVIEWS',
     title: 'Tarkov Hacks Buyer Reviews',
     subtitle: 'Real Tarkov Aimbot and ESP feedback',
   },
   {
     file: 'faq.jpg',
-    source: menuGif,
+    source: heroOg,
     eyebrow: 'FAQ',
     title: 'Tarkov Hacks FAQ',
     subtitle: 'Price, BattlEye status and setup answers',
   },
   {
     file: 'support.jpg',
-    source: videoThumb,
+    source: heroOg,
     eyebrow: 'SUPPORT',
     title: 'Tarkov Hacks Support',
     subtitle: 'Loader, delivery and Windows help',
@@ -223,55 +201,14 @@ if (!forums.length) {
 for (const forum of forums) {
   const file = `forums-${forum.slug}.jpg`
   const out = join(ogDir, file)
-  const source =
-    /esp|wallhack|radar|raid/i.test(forum.slug)
-      ? espGif
-      : /aimbot|features|hotkeys|setup|windows|antivirus|loader|stream/i.test(forum.slug)
-        ? menuGif
-        : heroOg
   await writeOgJpeg(
     out,
-    source,
+    heroOg,
     'TARKOV GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
     'Tarkov hacks · hacksfortarkov.org',
   )
   created.push(file)
-}
-
-// Auxiliary on-page art (only if missing)
-async function writeIfMissing(path, factory) {
-  if (await exists(path)) return false
-  await factory(path)
-  return true
-}
-
-function fillerSvg(width, height, eyebrow, title, subtitle) {
-  return Buffer.from(`
-    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
-      <rect width="100%" height="100%" fill="#08060f"/>
-      <text x="${width * 0.075}" y="${height * 0.47}" fill="#c084fc" font-size="${width * 0.022}" font-family="Arial, sans-serif" font-weight="700" letter-spacing="6">${escapeXml(eyebrow)}</text>
-      <text x="${width * 0.075}" y="${height * 0.64}" fill="#ffffff" font-size="${width * 0.05}" font-family="Arial, sans-serif" font-weight="700">${escapeXml(title)}</text>
-      <text x="${width * 0.075}" y="${height * 0.75}" fill="#c9bdd2" font-size="${width * 0.026}" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-    </svg>
-  `)
-}
-
-for (const [name, eyebrow, title, subtitle] of [
-  ['dayz-tactical-art.jpg', 'ESCAPE FROM TARKOV', 'Tarkov Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
-  ['dayz-control-art.jpg', 'TARKOV · WINDOWS PC', 'Tarkov ESP & Radar', 'Built for Tarkov survival runs'],
-  ['dayz-home-art.jpg', 'hacksfortarkov.org', 'Tarkov Hacks', 'Aimbot, ESP, wallhack and radar hack'],
-]) {
-  const path = join(mediaDir, name)
-  if (
-    await writeIfMissing(path, (p) =>
-      sharp(fillerSvg(1200, 675, eyebrow, title, subtitle))
-        .jpeg({ quality: 90, chromaSubsampling: '4:4:4' })
-        .toFile(p),
-    )
-  ) {
-    created.push(name)
-  }
 }
 
 console.log(`SEO OG images ready (${created.length}): ${created.slice(0, 8).join(', ')}…`)

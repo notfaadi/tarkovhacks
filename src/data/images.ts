@@ -1,11 +1,15 @@
-import { DAYZ_HERO, DAYZ_SOLDIER, DAYZ_COVER, DAYZ_MENU, DAYZ_ESP } from './media'
+import { TARKOV_HERO_STILL } from './media'
 import { DAYZ_OG, getOgImageForPath, PAGE_OG } from './og'
 
 export { DAYZ_OG, getOgImageForPath, PAGE_OG }
 export { forumOgImage } from './og'
 
-export const DAYZ_PRODUCT_HERO = DAYZ_HERO
-export const DAYZ_PRODUCT_COVER = DAYZ_COVER
+export const TARKOV_PRODUCT_HERO = TARKOV_HERO_STILL
+export const TARKOV_PRODUCT_COVER = TARKOV_HERO_STILL
+
+/** @deprecated */
+export const DAYZ_PRODUCT_HERO = TARKOV_PRODUCT_HERO
+export const DAYZ_PRODUCT_COVER = TARKOV_PRODUCT_COVER
 
 export type ImageSeoFields = {
   alt: string
@@ -21,7 +25,7 @@ export const IMAGE_SEO: Record<
     heroCaption: string
   }
 > = {
-  dayz: {
+  tarkov: {
     alt: 'Tarkov hacks product artwork for Escape from Tarkov on PC',
     title: 'Tarkov Hacks Product Details',
     caption: 'Tarkov Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
@@ -39,42 +43,42 @@ export const PAGE_IMAGES: Record<
   PageImage
 > = {
   home: {
-    src: DAYZ_SOLDIER,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.home,
     alt: 'Tarkov hacks Aimbot and ESP artwork for Escape from Tarkov on PC',
     title: 'Tarkov Hacks',
     caption: 'Tarkov Aimbot, ESP, wallhack and radar hack overview.',
   },
   forums: {
-    src: DAYZ_HERO,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.forums,
     alt: 'Tarkov hacks product artwork',
     title: 'Tarkov Hacks Guides',
     caption: 'Setup, Aimbot and ESP guides for Tarkov.',
   },
   reviews: {
-    src: DAYZ_ESP,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.reviews,
     alt: 'Tarkov hacks review artwork',
     title: 'Tarkov Hacks Reviews',
     caption: 'Feature and compatibility feedback for Escape from Tarkov.',
   },
   faq: {
-    src: DAYZ_MENU,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.faq,
     alt: 'Tarkov hacks FAQ artwork',
     title: 'Tarkov Hacks FAQ',
     caption: 'Compatibility, feature and setup answers for Tarkov.',
   },
   support: {
-    src: DAYZ_HERO,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.support,
     alt: 'Tarkov hacks support artwork',
     title: 'Tarkov Hacks Support',
     caption: 'Delivery, loader and setup support for Tarkov hacks.',
   },
   product: {
-    src: DAYZ_COVER,
+    src: TARKOV_HERO_STILL,
     og: PAGE_OG.product,
     alt: 'Tarkov Aimbot ESP and radar hack product artwork',
     title: 'Tarkov Hacks Features',
@@ -83,11 +87,11 @@ export const PAGE_IMAGES: Record<
 }
 
 export function getGameImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return TARKOV_PRODUCT_COVER
 }
 
 export function getProductHeroImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return TARKOV_PRODUCT_COVER
 }
 
 export function getOgImage(path?: string): string {

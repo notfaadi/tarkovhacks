@@ -11,64 +11,67 @@ export type SeoMediaItem = {
 /** Full-bleed homepage hero loop (Escape from Tarkov live wallpaper). */
 export const TARKOV_HERO_VIDEO = '/videos/tarkov-hero.mp4'
 
-/** Tarkov product art + menu stills (self-hosted). */
-export const DAYZ_HERO = '/media/dayz-hero-full.webp'
-export const DAYZ_SOLDIER = '/media/dayz-hero-full.webp'
-export const DAYZ_COVER = '/media/dayz-cover.webp'
-export const DAYZ_BOX = '/media/dayz-box.jpg'
-export const DAYZ_ESP = '/media/dayz-esp-gameplay.gif'
-export const DAYZ_MENU = '/media/dayz-menu.gif'
-export const DAYZ_GAMEPLAY = '/media/dayz-esp-gameplay.gif'
-export const DAYZ_HOME_ART = '/media/dayz-home-art.jpg'
-export const DAYZ_CONTROL = '/media/dayz-control-art.jpg'
-export const DAYZ_TACTICAL = '/media/dayz-tactical-art.jpg'
-export const DAYZ_VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
+/** Still frame from hero video — product art, posters, schema. */
+export const TARKOV_HERO_STILL = '/media/tarkov-hero-og.jpg'
 
-/** Self-hosted Tarkov Reaper preview (Bunny Stream GUID ee0735e7-…). */
-export const DAYZ_HOME_VIDEO = {
-  id: 'ee0735e7-c9a3-4072-b818-98e2bb7f07ff',
-  src: '/videos/dayz-preview.mp4',
-  poster: DAYZ_VIDEO_THUMB,
+/** Self-hosted feature preview (same EFT hero loop as homepage). */
+export const TARKOV_HOME_VIDEO = {
+  src: TARKOV_HERO_VIDEO,
+  poster: TARKOV_HERO_STILL,
   title: 'Tarkov Hacks Aimbot and ESP preview',
   caption: 'Preview of Tarkov Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
 } as const
 
+/** @deprecated Use TARKOV_* — kept so older imports do not break. */
+export const DAYZ_HERO = TARKOV_HERO_STILL
+export const DAYZ_SOLDIER = TARKOV_HERO_STILL
+export const DAYZ_COVER = TARKOV_HERO_STILL
+export const DAYZ_BOX = TARKOV_HERO_STILL
+export const DAYZ_ESP = TARKOV_HERO_STILL
+export const DAYZ_MENU = TARKOV_HERO_STILL
+export const DAYZ_GAMEPLAY = TARKOV_HERO_STILL
+export const DAYZ_HOME_ART = TARKOV_HERO_STILL
+export const DAYZ_CONTROL = TARKOV_HERO_STILL
+export const DAYZ_TACTICAL = TARKOV_HERO_STILL
+export const DAYZ_VIDEO_THUMB = TARKOV_HERO_STILL
+export const DAYZ_HOME_VIDEO = TARKOV_HOME_VIDEO
+
 export const PAGE_MEDIA = {
   home: {
-    image: DAYZ_SOLDIER,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov hacks Aimbot and ESP product artwork for Escape from Tarkov on PC',
     title: 'Tarkov Hacks for Escape from Tarkov',
     caption: 'Feature overview for Tarkov Aimbot, ESP, wallhack, loot ESP and radar hack.',
   },
   product: {
-    image: DAYZ_COVER,
-    video: DAYZ_HOME_VIDEO.src,
+    image: TARKOV_HERO_STILL,
+    video: TARKOV_HOME_VIDEO.src,
     alt: 'Tarkov ESP, silent aim Aimbot and loot highlight feature artwork',
     title: 'Tarkov Aimbot, ESP and Radar Hack Features',
     caption: 'Product overview for Escape from Tarkov on Windows PC.',
-    videoTitle: DAYZ_HOME_VIDEO.title,
-    videoDescription: DAYZ_HOME_VIDEO.caption,
+    videoTitle: TARKOV_HOME_VIDEO.title,
+    videoDescription: TARKOV_HOME_VIDEO.caption,
   },
   forums: {
-    image: DAYZ_HERO,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov hacks product artwork',
     title: 'Tarkov Hacks Guides',
     caption: 'Reference for setup, Aimbot, ESP, loot and BattlEye status articles.',
   },
   reviews: {
-    image: DAYZ_ESP,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov hacks ESP gameplay review artwork',
     title: 'Tarkov Hacks Reviews',
     caption: 'Feature and compatibility feedback for Tarkov hacks.',
   },
   faq: {
-    image: DAYZ_MENU,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov hacks menu artwork for the FAQ',
     title: 'Tarkov Hacks FAQ',
     caption: 'Compatibility, status and setup answers for Escape from Tarkov.',
   },
   support: {
-    image: DAYZ_HERO,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov hacks support artwork',
     title: 'Tarkov Hacks Support',
     caption: 'Delivery, loader and setup help for Tarkov hacks.',
@@ -88,7 +91,7 @@ const FORUM_MEDIA: Record<string, SeoMediaItem> = {
   'battleye-status': { ...PAGE_MEDIA.product },
   'windows-setup': { ...PAGE_MEDIA.support },
   'raid-play-guide': {
-    image: DAYZ_BOX,
+    image: TARKOV_HERO_STILL,
     alt: 'Tarkov survival and loot run cheats artwork',
     title: 'Tarkov Survival and Loot Run Cheats Guide',
     caption: 'Loot run tips for Tarkov Aimbot, ESP and radar hack.',

@@ -1,4 +1,4 @@
-import { DAYZ_HERO, TARKOV_HERO_VIDEO } from '../data/media'
+import { TARKOV_HERO_STILL, TARKOV_HERO_VIDEO } from '../data/media'
 
 type VideoBgProps = {
   /** Static hero image when `video` is omitted. */
@@ -10,7 +10,7 @@ type VideoBgProps = {
 
 /** Full-bleed hero — looping video or static artwork. */
 export function VideoBg({
-  image = DAYZ_HERO,
+  image = TARKOV_HERO_STILL,
   imageAlt = 'Tarkov hacks Aimbot and ESP product artwork',
   video,
 }: VideoBgProps) {

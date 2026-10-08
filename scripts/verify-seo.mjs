@@ -63,6 +63,9 @@ for (const file of files) {
     }
   }
 
+  if (/\/media\/dayz-|\/videos\/dayz-preview/.test(html)) {
+    fail(`${page}: contains legacy DayZ media URL`)
+  }
   if (html.includes('assets-prd.ignimgs.com')) fail(`${page}: contains third-party IGN image`)
   if (html.includes('cdn.cosmocheats.com')) fail(`${page}: contains third-party media hotlink`)
   if (html.includes('SearchAction')) fail(`${page}: contains invalid SearchAction`)
@@ -165,8 +168,11 @@ for (const [name, html] of [
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-') && !html.includes('/videos/tarkov-hero.mp4')) {
+  if (!html.includes('/media/tarkov-hero-og.jpg') && !html.includes('/videos/tarkov-hero.mp4')) {
     fail(`${name}: missing visible Tarkov media in page body`)
+  }
+  if (/\/media\/dayz-|\/videos\/dayz-preview/.test(html)) {
+    fail(`${name}: HTML still references legacy DayZ media URLs`)
   }
 }
 for (const [name, html, og] of [
@@ -178,7 +184,7 @@ for (const [name, html, og] of [
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
+if (!product.includes('/videos/tarkov-hero.mp4') || !product.includes('/media/tarkov-hero-og.jpg')) {
   fail('Product page is missing the self-hosted Tarkov preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
@@ -198,8 +204,11 @@ if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum rema
 if (!sitemap.includes('https://hacksfortarkov.org/')) {
   fail('sitemap.xml must use https://hacksfortarkov.org URLs')
 }
-if (!sitemap.includes('/videos/dayz-preview.mp4')) {
+if (!sitemap.includes('/videos/tarkov-hero.mp4')) {
   fail('sitemap.xml missing Tarkov preview video entry')
+}
+if (/\/media\/dayz-|\/videos\/dayz-preview|dayz-cheats\.jpg/.test(sitemap)) {
+  fail('sitemap.xml still lists legacy DayZ media URLs')
 }
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
@@ -226,11 +235,7 @@ const requiredImages = [
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
-  '/media/dayz-hero-full.webp',
-  '/media/dayz-cover.webp',
-  '/media/dayz-esp-gameplay.gif',
-  '/media/dayz-menu.gif',
-  '/media/dayz-video-thumb.jpg',
+  '/media/tarkov-hero-og.jpg',
 ]
 
 for (const url of expectedUrls) {
@@ -307,14 +312,8 @@ for (const asset of [
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
   'public/og/support.jpg',
-  'public/media/dayz-hero-full.webp',
   'public/media/tarkov-hero-og.jpg',
-  'public/media/dayz-cover.webp',
-  'public/media/dayz-box.jpg',
-  'public/media/dayz-esp-gameplay.gif',
-  'public/media/dayz-menu.gif',
-  'public/media/dayz-video-thumb.jpg',
-  'public/videos/dayz-preview.mp4',
+  'public/videos/tarkov-hero.mp4',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',

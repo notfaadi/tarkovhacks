@@ -43,11 +43,10 @@ export function HeroSearch({
     if (!term) return []
     const cheatAliases = [
       'tarkov hacks',
-      'dayz cheat',
-      'dayz hacks',
-      'dayz hack',
-      'dayz standalone cheats',
-      'dayzhacks',
+      'tarkov cheat',
+      'eft hacks',
+      'eft cheats',
+      'escape from tarkov hacks',
       'cheats',
     ]
     if (cheatAliases.some((a) => a.includes(term) || term.includes(a))) {

@@ -1,7 +1,7 @@
 import { blogPath } from './blog-paths'
 
 /** Official Escape from Tarkov destinations for factual game context. */
-export const OFFICIAL_DAYZ_LINKS = [
+export const OFFICIAL_TARKOV_LINKS = [
   {
     label: 'Escape from Tarkov',
     href: 'https://www.escapefromtarkov.com/',

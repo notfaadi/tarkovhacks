@@ -40,7 +40,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Use this checklist before checkout',
         body: [
-          'Searching “tarkov hacks” or “dayz cheat” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
+          'Searching “tarkov hacks” or “eft cheats” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
           'Tarkov Hacks on hacksfortarkov.org is a single Escape from Tarkov product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded private servers are supported when the build allows it.',
         ],
       },
@@ -141,7 +141,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'What Tarkov ESP actually does',
         body: [
           'Tarkov ESP draws survivors, infected and high-value loot through walls, fences and treelines before you expose yourself. It does not pull the trigger.',
-          'Most searches for “dayz wallhack” or “dayz esp” want this awareness layer — in a game where a kit takes hours to build, information beats loud Aimbot.',
+          'Most searches for “tarkov wallhack” or “tarkov esp” want this awareness layer — in a raid where a kit takes hours to build, information beats loud Aimbot.',
         ],
       },
       {
@@ -185,7 +185,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Why radar matters in Tarkov',
         body: [
           'Most Tarkov deaths are information gaps — the sniper above Elektro, the duo already in the airfield, the third party that heard your gunfight. A radar hack closes that gap without forcing Aimbot.',
-          'Buyers searching “dayz radar hack” want macro awareness for rotations between towns, military zones and base.',
+          'Buyers searching “tarkov radar hack” want macro awareness for rotations between extracts, hotspots and loot routes.',
         ],
       },
       {

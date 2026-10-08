@@ -14,28 +14,12 @@ const SITE = (process.env.SITE_URL || 'https://hacksfortarkov.org').replace(/\/$
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
-const HOME_ART = '/media/dayz-home-art.jpg'
-const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
+const HERO_STILL = '/media/tarkov-hero-og.jpg'
+const PREVIEW_VIDEO = '/videos/tarkov-hero.mp4'
 const OG_DEFAULT = '/og/share-hero.jpg'
 
 const ALL_SITE_IMAGES = [
-  HERO_FULL,
-  COVER,
-  BOX,
-  ESP,
-  MENU,
-  CONTROL,
-  HOME_ART,
-  TACTICAL_ART,
-  VIDEO_THUMB,
+  HERO_STILL,
   '/og/share-hero.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
@@ -46,21 +30,23 @@ const ALL_SITE_IMAGES = [
   '/og/refunds.jpg',
 ]
 
-const FORUM_IMAGES = {
-  'features-list': COVER,
-  hotkeys: MENU,
-  'complete-setup': HERO_FULL,
-  'disable-antivirus': CONTROL,
-  'undetected-status': COVER,
-  'aimbot-settings': MENU,
-  'esp-wallhack-guide': ESP,
-  'radar-hack-guide': MENU,
-  'stream-proof-setup': HOME_ART,
-  'battleye-status': COVER,
-  'windows-setup': HERO_FULL,
-  'raid-play-guide': BOX,
-  'loader-errors': TACTICAL_ART,
-}
+const FORUM_IMAGES = Object.fromEntries(
+  [
+    'features-list',
+    'hotkeys',
+    'complete-setup',
+    'disable-antivirus',
+    'undetected-status',
+    'aimbot-settings',
+    'esp-wallhack-guide',
+    'radar-hack-guide',
+    'stream-proof-setup',
+    'battleye-status',
+    'windows-setup',
+    'raid-play-guide',
+    'loader-errors',
+  ].map((slug) => [slug, HERO_STILL]),
+)
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
@@ -176,19 +162,14 @@ function imagesForPath(path, games, forums) {
         caption: 'Google and social preview image for hacksfortarkov.org homepage.',
       },
       {
-        src: HERO_FULL,
+        src: HERO_STILL,
         title: 'Tarkov Hacks Hero',
         caption: 'Buy Tarkov hacks - Tarkov Aimbot, ESP and radar hack hero artwork for PC.',
       },
       {
-        src: COVER,
-        title: 'Tarkov Hacks Product Cover',
-        caption: 'Tarkov hacks product cover for checkout and social previews.',
-      },
-      {
-        src: VIDEO_THUMB,
-        title: 'Tarkov Hacks Preview Thumbnail',
-        caption: 'Thumbnail for the Tarkov Aimbot and ESP preview video.',
+        src: HERO_STILL,
+        title: 'Tarkov Hacks Product Artwork',
+        caption: 'Tarkov hacks product art for checkout and social previews.',
       },
       {
         src: OG_DEFAULT,
@@ -207,29 +188,14 @@ function imagesForPath(path, games, forums) {
         caption: 'Google and social preview for the Tarkov hacks product page.',
       },
       {
-        src: COVER,
+        src: HERO_STILL,
         title: 'Tarkov Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
-        src: HERO_FULL,
-        title: `${game.name} Cheats Product Hero`,
+        src: OG_DEFAULT,
+        title: `${game.name} Cheats Social Preview`,
         caption: `Hero artwork for ${game.name} Aimbot, ESP and radar hack product details.`,
-      },
-      {
-        src: MENU,
-        title: `${game.name} Cheats Menu Preview`,
-        caption: `Menu and Aimbot settings preview for ${game.name} cheats.`,
-      },
-      {
-        src: ESP,
-        title: `${game.name} ESP Gameplay`,
-        caption: `Player ESP and wallhack preview for ${game.name}.`,
-      },
-      {
-        src: VIDEO_THUMB,
-        title: 'Tarkov Hacks Preview Thumbnail',
-        caption: 'Thumbnail for the Tarkov hacks preview video.',
       },
     ]
   }
@@ -242,7 +208,7 @@ function imagesForPath(path, games, forums) {
         caption: 'Google preview image for the Tarkov Hacks guides index.',
       },
       {
-        src: MENU,
+        src: HERO_STILL,
         title: 'Tarkov Hacks Forum Artwork',
         caption: 'Artwork reference for Tarkov setup and feature guides.',
       },
@@ -261,7 +227,7 @@ function imagesForPath(path, games, forums) {
           `Google preview image for ${forum?.title || slug} on hacksfortarkov.org.`,
       },
       {
-        src: FORUM_IMAGES[slug] || MENU,
+        src: FORUM_IMAGES[slug] || HERO_STILL,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
@@ -332,7 +298,7 @@ function videosForPath(path) {
   if (path === '/tarkov-hacks') {
     return [
       {
-        thumb: VIDEO_THUMB,
+        thumb: HERO_STILL,
         title: 'Tarkov Hacks Aimbot and ESP Preview',
         description:
           'Self-hosted Tarkov hacks preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',

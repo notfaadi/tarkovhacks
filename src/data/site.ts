@@ -1,5 +1,4 @@
-﻿import { DAYZ_OG } from './images'
-import { PAGE_OG } from './og'
+﻿import { PAGE_OG, OG_SHARE } from './og'
 
 export const SITE_URL = 'https://hacksfortarkov.org'
 export const SITE_NAME = 'Tarkov Hacks'
@@ -50,7 +49,7 @@ export const SEO_REGIONS = [
   { hreflang: 'x-default', label: 'Default' },
 ] as const
 
-export const OG_IMAGE = DAYZ_OG
+export const OG_IMAGE = OG_SHARE
 
 export type PageSeo = {
   title: string

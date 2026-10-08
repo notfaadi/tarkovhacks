@@ -141,8 +141,8 @@ export function productCoreJsonLd() {
       name: 'Tarkov Hacks Aimbot and ESP preview',
       description:
         'Preview of Tarkov Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
-      thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
-      contentUrl: absoluteAsset('/videos/dayz-preview.mp4'),
+      thumbnailUrl: absoluteAsset('/media/tarkov-hero-og.jpg'),
+      contentUrl: absoluteAsset('/videos/tarkov-hero.mp4'),
       uploadDate: '2026-09-16',
       inLanguage: 'en',
     },

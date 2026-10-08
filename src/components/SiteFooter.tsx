@@ -1,6 +1,6 @@
 import { LogoMark } from './LogoMark'
 import {
-  OFFICIAL_DAYZ_LINKS,
+  OFFICIAL_TARKOV_LINKS,
   SITE_GUIDE_LINKS,
   SITE_PAGE_LINKS,
 } from '../data/links'
@@ -110,7 +110,7 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
                 Official Tarkov
               </p>
               <ul className="mt-3 space-y-2 text-sm text-white/65">
-                {OFFICIAL_DAYZ_LINKS.map((l) => (
+                {OFFICIAL_TARKOV_LINKS.map((l) => (
                   <li key={l.href}>
                     <a
                       href={l.href}

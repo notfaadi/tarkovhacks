@@ -15,7 +15,7 @@ import { FaqSection } from '../components/FaqSection'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { NotFoundPage } from './NotFoundPage'
 import { blogPath } from '../data/blogs'
-import { DAYZ_HOME_VIDEO } from '../data/media'
+import { TARKOV_HOME_VIDEO } from '../data/media'
 import { TarkovPreview } from '../components/DayZPreview'
 
 function ProductPurchaseCard({ game }: { game: Game }) {
@@ -32,7 +32,7 @@ function ProductPurchaseCard({ game }: { game: Game }) {
       </CheckoutLink>
       <div className="p-5 sm:p-6">
         <div className="flex items-center gap-3">
-          <div className="icon-well shrink-0 text-sm font-bold">DZ</div>
+          <div className="icon-well shrink-0 text-sm font-bold">EFT</div>
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold text-white">Tarkov Hacks</p>
             <p className="text-xs text-white/45">
@@ -170,7 +170,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                   <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
                     Feature preview
                   </h2>
-                  <p className="mt-2 text-sm text-white/45">{DAYZ_HOME_VIDEO.caption}</p>
+                  <p className="mt-2 text-sm text-white/45">{TARKOV_HOME_VIDEO.caption}</p>
                   <TarkovPreview className="mt-4" />
                 </div>
               </div>

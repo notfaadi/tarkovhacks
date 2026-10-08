@@ -16,19 +16,14 @@
       <image:caption>Google and social preview image for hacksfortarkov.org homepage.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Hacks Hero</image:title>
       <image:caption>Buy Tarkov hacks - Tarkov Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
-      <image:title>Tarkov Hacks Product Cover</image:title>
-      <image:caption>Tarkov hacks product cover for checkout and social previews.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>Tarkov Hacks Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the Tarkov Aimbot and ESP preview video.</image:caption>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
+      <image:title>Tarkov Hacks Product Artwork</image:title>
+      <image:caption>Tarkov hacks product art for checkout and social previews.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hacksfortarkov.org/og/share-hero.jpg</image:loc>
@@ -49,35 +44,20 @@
       <image:caption>Google and social preview for the Tarkov hacks product page.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Aimbot ESP Product Artwork</image:title>
       <image:caption>Product features, compatibility, status and price before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
-      <image:title>Escape from Tarkov Cheats Product Hero</image:title>
+      <image:loc>https://hacksfortarkov.org/og/share-hero.jpg</image:loc>
+      <image:title>Escape from Tarkov Cheats Social Preview</image:title>
       <image:caption>Hero artwork for Escape from Tarkov Aimbot, ESP and radar hack product details.</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
-      <image:title>Escape from Tarkov Cheats Menu Preview</image:title>
-      <image:caption>Menu and Aimbot settings preview for Escape from Tarkov cheats.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>Escape from Tarkov ESP Gameplay</image:title>
-      <image:caption>Player ESP and wallhack preview for Escape from Tarkov.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>Tarkov Hacks Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the Tarkov hacks preview video.</image:caption>
-    </image:image>
     <video:video>
-      <video:thumbnail_loc>https://hacksfortarkov.org/media/dayz-video-thumb.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</video:thumbnail_loc>
       <video:title>Tarkov Hacks Aimbot and ESP Preview</video:title>
       <video:description>Self-hosted Tarkov hacks preview showing Aimbot, ESP menu and survival gameplay visuals on PC.</video:description>
-      <video:content_loc>https://hacksfortarkov.org/videos/dayz-preview.mp4</video:content_loc>
+      <video:content_loc>https://hacksfortarkov.org/videos/tarkov-hero.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
@@ -95,7 +75,7 @@
       <image:caption>Google preview image for the Tarkov Hacks guides index.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Hacks Forum Artwork</image:title>
       <image:caption>Artwork reference for Tarkov setup and feature guides.</image:caption>
     </image:image>
@@ -113,7 +93,7 @@
       <image:caption>Tarkov aimbot settings for EFT cheats on PC: silent aim, FOV, smoothing and visible-check so Escape from Tarkov hacks look legit. Tarkov cheat aimbot configs on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Aimbot Settings for Silent Aim Artwork</image:title>
       <image:caption>Tune Tarkov Aimbot FOV, smoothing, hitbox and silent aim so survivor tracking stays effective without looking robotic to spectating admins.</image:caption>
     </image:image>
@@ -131,7 +111,7 @@
       <image:caption>BattlEye status for Tarkov hacks and EFT cheats: clear-to-load vs Updating, undetected windows, and why Escape from Tarkov hack buyers wait on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov BattlEye Status: Clear to Load vs Updating Artwork</image:title>
       <image:caption>What clear-to-load and Updating mean for Tarkov hacks after BattlEye and game patches - and why admin bans are a separate risk.</image:caption>
     </image:image>
@@ -149,7 +129,7 @@
       <image:caption>Complete Escape from Tarkov hacks setup: EFT cheats load order, antivirus exclusions, aimbot and ESP first run, spoofer steps and BattlEye re-check on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Complete Tarkov Hacks Setup Artwork</image:title>
       <image:caption>Step-by-step Tarkov hacks setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.</image:caption>
     </image:image>
@@ -167,7 +147,7 @@
       <image:caption>Antivirus exclusions for Tarkov hacks and Escape from Tarkov cheat loaders - Defender allowlist, quarantine restore and EFT hack delivery folder on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-control-art.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Antivirus Exclusions for Tarkov Hacks Artwork</image:title>
       <image:caption>Allowlist Tarkov hacks in Windows Defender and common antivirus so the loader is not quarantined before first run.</image:caption>
     </image:image>
@@ -185,7 +165,7 @@
       <image:caption>Tarkov ESP and wallhack setup for EFT hacks: player boxes, loot ESP, distance, health and scav tracking. Escape from Tarkov cheats HUD defaults on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-esp-gameplay.gif</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov ESP and Wallhack Setup Artwork</image:title>
       <image:caption>Configure Tarkov ESP and wallhack for survivor boxes, infected tracking and loot highlighting without flooding your HUD.</image:caption>
     </image:image>
@@ -203,7 +183,7 @@
       <image:caption>Tarkov hack and EFT cheats features checklist: silent aim aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and BattlEye status on hacksfortarkov.org from $35 before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Cheat Features Checklist Artwork</image:title>
       <image:caption>Checklist of every Tarkov hack module on hacksfortarkov.org - silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer - before you open checkout from $35.</image:caption>
     </image:image>
@@ -221,7 +201,7 @@
       <image:caption>Tarkov hacks hotkeys for EFT cheats: menu, aimbot toggle, player ESP, loot ESP, wallhack, radar hack and stream-proof binds after checkout on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Hacks Hotkeys After Load Artwork</image:title>
       <image:caption>Menu and toggle hotkeys for Tarkov hacks after a clean load - Aimbot, ESP, loot ESP, radar and panic binds.</image:caption>
     </image:image>
@@ -239,7 +219,7 @@
       <image:caption>Fix Tarkov hacks loader errors for EFT cheats on Windows: inject failed, menu not opening, antivirus quarantine and overlay conflicts - check BattlEye status on hacksfortarkov.org first.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-tactical-art.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Fix Tarkov Hacks Loader Errors Artwork</image:title>
       <image:caption>Troubleshoot Tarkov hacks loader errors - menu not opening, instant close, antivirus quarantine and failed inject.</image:caption>
     </image:image>
@@ -257,7 +237,7 @@
       <image:caption>Tarkov radar hack guide for EFT cheats on PC: 2D overlay, off-screen PMC tracking and safer extracts. Pair radar hack with ESP and wallhack on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-menu.gif</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Radar Hack Overlay Guide Artwork</image:title>
       <image:caption>Use the Tarkov radar hack 2D overlay to track off-screen survivors, avoid third parties and approach military loot safer.</image:caption>
     </image:image>
@@ -275,7 +255,7 @@
       <image:caption>Safer Tarkov cheat settings for EFT loot runs: ESP-first, loot ESP, mild silent aim, radar hack and wallhack habits that reduce report risk on Escape from Tarkov raids.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-box.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Safer Tarkov Cheat Settings for Loot Runs Artwork</image:title>
       <image:caption>Safer Tarkov hack defaults for survival and loot runs - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
     </image:image>
@@ -293,7 +273,7 @@
       <image:caption>Stream-proof Tarkov hacks for OBS: hide EFT ESP, wallhack and aimbot overlays from clips while keeping local view. Escape from Tarkov cheats stream setup on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-home-art.jpg</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Stream-Proof Tarkov Hacks for OBS Artwork</image:title>
       <image:caption>Hide Tarkov ESP, loot highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.</image:caption>
     </image:image>
@@ -311,7 +291,7 @@
       <image:caption>BattlEye checklist before you buy Tarkov hacks or EFT cheats: confirm clear-to-load, avoid Updating builds, and re-check Escape from Tarkov hack status every patch.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-cover.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>BattlEye Status Checklist Before You Buy or Load Artwork</image:title>
       <image:caption>Short BattlEye status checklist for Tarkov hacks - confirm clear-to-load before checkout and before every post-patch session.</image:caption>
     </image:image>
@@ -329,7 +309,7 @@
       <image:caption>Windows 10/11 setup for Tarkov hacks and EFT cheats: overlays off, Defender exclusions, admin loader rights and clean BattlEye first load on hacksfortarkov.org.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://hacksfortarkov.org/media/dayz-hero-full.webp</image:loc>
+      <image:loc>https://hacksfortarkov.org/media/tarkov-hero-og.jpg</image:loc>
       <image:title>Tarkov Hacks on Windows 10 and 11 Artwork</image:title>
       <image:caption>Windows 10/11 prep for Tarkov hacks - overlays, Defender exclusions, admin rights and a clean first launch against BattlEye.</image:caption>
     </image:image>
