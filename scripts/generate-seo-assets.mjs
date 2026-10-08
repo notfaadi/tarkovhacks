@@ -33,6 +33,9 @@ async function exists(path) {
   }
 }
 
+/** Frame from /videos/tarkov-hero.mp4 — matches live homepage wallpaper (no DayZ box art). */
+const heroOg = join(mediaDir, 'tarkov-hero-og.jpg')
+
 const requiredBattlelog = [
   join(mediaDir, 'dayz-hero-full.webp'),
   join(mediaDir, 'dayz-cover.webp'),
@@ -40,6 +43,7 @@ const requiredBattlelog = [
   join(mediaDir, 'dayz-menu.gif'),
   join(mediaDir, 'dayz-esp-gameplay.gif'),
   join(mediaDir, 'dayz-video-thumb.jpg'),
+  heroOg,
 ]
 
 for (const path of requiredBattlelog) {
@@ -47,7 +51,6 @@ for (const path of requiredBattlelog) {
     throw new Error(`Missing Tarkov media asset (do not regenerate): ${path}`)
   }
 }
-
 function overlaySvg(width, height, eyebrow, title, subtitle) {
   const titleSize = Math.min(54, Math.round(width * 0.042))
   const lines = String(title).match(/.{1,28}(\s|$)/g)?.map((s) => s.trim()).filter(Boolean) || [
@@ -114,22 +117,22 @@ const videoThumb = join(mediaDir, 'dayz-video-thumb.jpg')
 const staticOg = [
   {
     file: 'home.jpg',
-    source: heroFull,
-    eyebrow: 'DAYZ CHEATS',
+    source: heroOg,
+    eyebrow: 'TARKOV HACKS',
     title: 'Tarkov Aimbot, ESP & Radar Hack',
     subtitle: 'Tarkov hacks from $35 · live BattlEye status',
   },
   {
     file: 'dayz-cheats.jpg',
-    source: coverArt,
-    eyebrow: 'PRODUCT DETAILS',
+    source: heroOg,
+    eyebrow: 'TARKOV HACKS',
     title: 'Tarkov Aimbot, ESP & Radar',
     subtitle: 'Features, BattlEye status and price',
   },
   {
     file: 'tarkov-hacks.jpg',
-    source: coverArt,
-    eyebrow: 'PRODUCT DETAILS',
+    source: heroOg,
+    eyebrow: 'TARKOV HACKS',
     title: 'Tarkov Hacks — Aimbot, ESP & Radar',
     subtitle: 'Features, BattlEye status and price',
   },
@@ -163,21 +166,21 @@ const staticOg = [
   },
   {
     file: 'privacy.jpg',
-    source: heroFull,
+    source: heroOg,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
     subtitle: 'How hacksfortarkov.org handles order data',
   },
   {
     file: 'terms.jpg',
-    source: heroFull,
+    source: heroOg,
     eyebrow: 'POLICY',
     title: 'Terms of Use',
     subtitle: 'License rules for Tarkov Hacks',
   },
   {
     file: 'refunds.jpg',
-    source: coverArt,
+    source: heroOg,
     eyebrow: 'POLICY',
     title: 'Refund Policy',
     subtitle: 'Digital license refund rules',
@@ -213,11 +216,11 @@ for (const forum of forums) {
       ? espGif
       : /aimbot|features|hotkeys|setup|windows|antivirus|loader|stream/i.test(forum.slug)
         ? menuGif
-        : coverArt
+        : heroOg
   await writeOgJpeg(
     out,
     source,
-    'DAYZ GUIDE',
+    'TARKOV GUIDE',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
     'Tarkov hacks · hacksfortarkov.org',
   )
@@ -243,8 +246,8 @@ function fillerSvg(width, height, eyebrow, title, subtitle) {
 }
 
 for (const [name, eyebrow, title, subtitle] of [
-  ['dayz-tactical-art.jpg', 'DAYZ STANDALONE', 'Tarkov Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
-  ['dayz-control-art.jpg', 'DAYZ · WINDOWS PC', 'Tarkov ESP & Radar', 'Built for Tarkov survival runs'],
+  ['dayz-tactical-art.jpg', 'ESCAPE FROM TARKOV', 'Tarkov Hacks', 'Aimbot · ESP · Loot ESP · BattlEye'],
+  ['dayz-control-art.jpg', 'TARKOV · WINDOWS PC', 'Tarkov ESP & Radar', 'Built for Tarkov survival runs'],
   ['dayz-home-art.jpg', 'hacksfortarkov.org', 'Tarkov Hacks', 'Aimbot, ESP, wallhack and radar hack'],
 ]) {
   const path = join(mediaDir, name)

@@ -4,7 +4,7 @@
  */
 
 export const OG_HOME = '/og/home.jpg'
-export const OG_PRODUCT = '/og/dayz-cheats.jpg'
+export const OG_PRODUCT = '/og/tarkov-hacks.jpg'
 export const OG_FORUMS = '/og/forums.jpg'
 export const OG_REVIEWS = '/og/reviews.jpg'
 export const OG_FAQ = '/og/faq.jpg'

@@ -129,7 +129,7 @@ export function productCoreJsonLd() {
     description: SITE_PURPOSE,
     url: `${SITE_URL}/tarkov-hacks`,
     image: [
-      absoluteAsset('/og/dayz-cheats.jpg'),
+      absoluteAsset('/og/tarkov-hacks.jpg'),
       absoluteAsset('/og/home.jpg'),
       absoluteAsset(PAGE_MEDIA.product.image),
       absoluteAsset(PAGE_MEDIA.home.image),

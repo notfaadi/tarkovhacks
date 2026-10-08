@@ -308,6 +308,7 @@ for (const asset of [
   'public/og/faq.jpg',
   'public/og/support.jpg',
   'public/media/dayz-hero-full.webp',
+  'public/media/tarkov-hero-og.jpg',
   'public/media/dayz-cover.webp',
   'public/media/dayz-box.jpg',
   'public/media/dayz-esp-gameplay.gif',
