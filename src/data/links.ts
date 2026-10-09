@@ -80,8 +80,9 @@ export const SITE_GUIDE_LINKS = [
   { label: 'Status checklist', to: blogPath('undetected-status') },
 ] as const
 
-/** Zadeyo checkout — must match affiliate link (FDI → /products/tarkov). */
-export const CHECKOUT_URL = 'https://zadeyo.com/go/FDI?to=%2Fproducts%2Ftarkov'
+/** Zadeyo checkout — FDI affiliate → live EFT product (not /products/tarkov → 404 tarkov-cheats). */
+export const CHECKOUT_URL =
+  'https://zadeyo.com/go/FDI?to=%2Fproducts%2Fescape-from-tarkov-cheats'
 
 export function getCheckoutUrl(_productSlug?: string): string {
   return CHECKOUT_URL

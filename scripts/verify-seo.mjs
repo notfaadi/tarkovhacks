@@ -187,6 +187,19 @@ for (const [name, html, og] of [
 if (!product.includes('/videos/tarkov-hero.mp4') || !product.includes('/media/tarkov-hero-og.jpg')) {
   fail('Product page is missing the self-hosted Tarkov preview video')
 }
+const checkoutAffiliate =
+  'https://zadeyo.com/go/FDI?to=%2Fproducts%2Fescape-from-tarkov-cheats'
+for (const [name, html] of [
+  ['home', home],
+  ['product', product],
+]) {
+  if (!html.includes(checkoutAffiliate)) {
+    fail(`${name}: Buy/checkout links must use Zadeyo escape-from-tarkov-cheats affiliate URL`)
+  }
+  if (html.includes('to=%2Fproducts%2Ftarkov') || html.includes('/products/tarkov-cheats')) {
+    fail(`${name}: checkout still points at broken Zadeyo /products/tarkov or tarkov-cheats`)
+  }
+}
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
 }
